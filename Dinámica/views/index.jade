@@ -2,8 +2,89 @@ doctype html
 html(lang="es")
   head
     title= "Antonio Payá"
-    meta (name='viewport' , content='width=device-width, initial-scale=1')
-    meta (charset='utf-8')
-    meta (name='description',content='Página personal de Antonio Payá')
-  body
-    h1 Página web dinámica de Antonio Payá
+
+    meta(name="viewport" , content="width=device-width, initial-scale=1")
+    meta(charset="utf-8")
+    meta(name="description",content="Página personal de Antonio Payá")
+
+    link(rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.min.css")
+    link(rel="stylesheet" type="text/css" href="css/normalize.min.css")
+    link(rel="stylesheet" type="text/css" href="css/boilerplate.min.css")
+    link(rel="stylesheet" type="text/css" href="css/icons/font-awesome.min.css")
+    link(rel="stylesheet" type="text/css" href="css/style.css")
+    link(rel="stylesheet" type="text/css" href="css/colors/red.min.css" id="color")
+    link(rel="stylesheet" type="text/css" href="css/colors/default.min.css" id="color")
+    link(rel="stylesheet" type="text/css" href="css/colors/chooser.min.css")
+    link(rel="stylesheet" type="text/css" href="css/bjqs.min.css")
+    link(rel="stylesheet" type="text/css" href="css/jquery.lightbox.min.css")
+
+    link(href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css')
+
+    link(rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico")
+
+  body(class="bg01")
+    div(id="loading_page")
+      img(src="img/loading.gif" alt="Loading")
+    div(id="all" class="clearfix")
+      section(id="leftSection")
+        div(id="columnLeft" class="bgLight box-shadow box-sizing")
+          div(class="content")
+            div(class="inner")
+              div(class="col c1")
+                section(id="box-photo" class="box-sizing")
+                  a(href="#profile" class="menu")
+                    img(id="photo" alt="Profile Photo" src="img/profile/f3.jpg" width="250" height="250" class="box-sizing inner-shadow")
+              div(id="mainInfo")
+                h1(id="name" class="transition-02") Antonio Payá
+                h2(class="line") Ingeniero Informático del Software
+              section(id="bio")
+                p.
+                  Estudiante de la Escuela de Ingeniería Informática de Oviedo
+                p.
+                  Jugador del club de fútbol Unión Deportiva Gijón Industrial.
+              setion(id="social")
+                h2(class="line") Sígueme en las redes sociales
+                a(href="https://www.facebook.com/AntonioPaya22" class="first")
+                  i(class="icon-facebook")
+                a(href="https://twitter.com/AntonioPaya22")
+                  i(class="icon-twitter")
+                a(href="https://instagram.com/antonioalfa22/")
+                  i(class="icon-instagram")
+                a(href="http://antonioalfa.tumblr.com/")
+                  i(class="icon-tumblr")
+                a(href="https://github.com/antonioalfa22" class="last")
+                  i(class="icon-github")
+                div(class="clear")
+
+      section(id="rightSection")
+        section(id="top")
+          div(class="content")
+            nav(id="nav")
+              ul
+                li
+                  a(href="#profile" id="profile" class="menu box-shadow active")
+                    i(class="icon-male")
+                      span Perfil
+                li
+                  a(href="#resume" id="resume" class="menu box-shadow")
+                    i(class="icon-file-text")
+                      span Feed Rss
+                li
+                  a(href="#portfolio" id="portfolio" class="menu box-shadow")
+                    i(class="icon-briefcase")
+                      span Portfolio
+                li
+                  a(href="http://antonioalfa.tumblr.com")
+                    i(class="icon-bullhorn")
+                      span Blog
+                li
+                  a(href="#contact" id="contact" class="menu box-shadow")
+                    i(class="icon-envelope")
+                      span Contato
+              div(class="clear")
+        
+
+
+
+
+
