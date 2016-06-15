@@ -1,0 +1,65 @@
+/* ---------------- */
+/* Default Colors	*/
+/* ---------------- */
+
+ul.bjqs-controls li a, a.readmore, #page, #social a:hover, #field-clear
+{ background-color: #FFFFFF; }
+
+p.bjqs-caption, h1, h2, #leftSection, #name, .color-hover, #social a, ul.bjqs-controls li a:hover,
+ul.bjqs-controls li a:focus, ul.bjqs-controls li a:active, ol.bjqs-markers li a:hover, ol.bjqs-markers li a:focus,
+ol.bjqs-markers li.active-marker a, a.readmore:hover, a.readmore:focus, a.readmore:active,
+.btn:hover, .btn:focus, .btn:active, #leftSection a, .btn.groups:hover, .btn.groups:focus, .btn.groups:active,
+#leftSection a.menu:hover, #leftSection a.menu:focus, #field-send:hover, #field-send:focus, #field-send
+{ color: #FFFFFF; }
+::-webki-selection	{ color: #FFFFFF; }
+::-moz-selection	{ color: #FFFFFF; }
+::selection			{ color: #FFFFFF; }
+
+#photo, .color-hover i, #social a:hover
+{ border: 1px solid #FFFFFF; }
+
+.btn, .btn.groups
+{ border: 1px solid #444444; }
+
+.btn, .btn.groups
+{ background-color: #666666; }
+
+h3, h4, h6, #rightSection p
+{ color: #666666; }
+
+#field-clear
+{ color: #FFFFFF; background-color: #999999; border-color: #999999; }
+
+#field-clear:hover, #field-clear:focus
+{ color: #FFFFFF; background-color: #666666; border-color: #666666; }
+
+input[type="text"], input[type="password"], .input, select, textarea,
+#copyright, #copyright p, #copyright a.to-top
+{ color: #999999; }
+
+.progress, .jspTrack
+{ background-color: #CCCCCC; }
+
+hr,
+input[type="text"], input[type="password"], .input, select, textarea
+{ border-color: #CCCCCC; }
+
+.btn, .btn.groups, #name
+{ color: #FFFFFF; }
+
+a.readmore.disabled,
+a.readmore.disabled:hover,
+a.readmore.disabled:focus,
+a.readmore.disabled:active {
+	background-color:	#FFFFFF !important;
+	color:				#999999 !important;
+	border:				1px solid #999999 !important;
+}
+
+/* Main Menu */
+nav#nav ul li a					{ background-color: #FFFFFF; color: #999999; border: 0 !important;	}
+
+nav#nav ul li a:hover,
+nav#nav ul li a:focus			{ background-color: #FFFFFF; color: #333333;	}
+
+nav#nav ul li a.active			{ color: #FFFFFF;	}
