@@ -1009,7 +1009,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 #field-clear	{ margin: 0px 0px 0px 0px;	width: 30%;		}
 #field-send		{ margin: 0px 0px 0px 2%;	width: 68%;		}
 #errordiv label.error {
-	background:			#FFDDDD url('../img/error.png') center right no-repeat;
+	background:			#FFDDDD url('../../../OneDrive/web personal/img/error.png') center right no-repeat;
 	width:				100%;
 	margin:				0px 0px 5px 0px;
 	padding:			6px;
@@ -1351,24 +1351,24 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 120dpi){
 	/* Background Style */
-	.bg01	{ background-image: url('../img/bg/pattern-01_402X.png');	}
-	.bg02	{ background-image: url('../img/bg/pattern-02_402X.png');	}
-	.bg03	{ background-image: url('../img/bg/pattern-03_402X.png');	}
-	.bg04	{ background-image: url('../img/bg/pattern-04_402X.png');	}
-	.bg05	{ background-image: url('../img/bg/pattern-05_402X.png');	}
-	.bg06	{ background-image: url('../img/bg/pattern-06_402X.png');	}
-	.bg07	{ background-image: url('../img/bg/pattern-07_402X.png');	}
-	.bg08	{ background-image: url('../img/bg/pattern-08_402X.png');	}
-	.bg09	{ background-image: url('../img/bg/pattern-09_402X.png');	}
-	.bg10	{ background-image: url('../img/bg/pattern-10_402X.png');	}
-	.bg11	{ background-image: url('../img/bg/pattern-11_402X.png');	}
-	.bg12	{ background-image: url('../img/bg/pattern-12_402X.png');	}
-	.bg13	{ background-image: url('../img/bg/pattern-13_402X.png');	}
-	.bg14	{ background-image: url('../img/bg/pattern-14_402X.png');	}
-	.bg15	{ background-image: url('../img/bg/pattern-15_402X.png');	}
-	.bg16	{ background-image: url('../img/bg/pattern-16_402X.png');	}
-	.bg17	{ background-image: url('../img/bg/pattern-17_402X.png');	}
-	.bg18	{ background-image: url('../img/bg/pattern-18_402X.png');	}
-	.bg19	{ background-image: url('../img/bg/pattern-19_402X.png');	}
-	.bg20	{ background-image: url('../img/bg/pattern-20_402X.png');	}	
+	.bg01	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-01_402X.png');	}
+	.bg02	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-02_402X.png');	}
+	.bg03	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-03_402X.png');	}
+	.bg04	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-04_402X.png');	}
+	.bg05	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-05_402X.png');	}
+	.bg06	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-06_402X.png');	}
+	.bg07	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-07_402X.png');	}
+	.bg08	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-08_402X.png');	}
+	.bg09	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-09_402X.png');	}
+	.bg10	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-10_402X.png');	}
+	.bg11	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-11_402X.png');	}
+	.bg12	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-12_402X.png');	}
+	.bg13	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-13_402X.png');	}
+	.bg14	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-14_402X.png');	}
+	.bg15	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-15_402X.png');	}
+	.bg16	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-16_402X.png');	}
+	.bg17	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-17_402X.png');	}
+	.bg18	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-18_402X.png');	}
+	.bg19	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-19_402X.png');	}
+	.bg20	{ background-image: url('../../../OneDrive/web personal/img/bg/pattern-20_402X.png');	}
 }
