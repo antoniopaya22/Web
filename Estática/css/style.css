@@ -1009,7 +1009,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 #field-clear	{ margin: 0px 0px 0px 0px;	width: 30%;		}
 #field-send		{ margin: 0px 0px 0px 2%;	width: 68%;		}
 #errordiv label.error {
-	background:			#FFDDDD url('../../../OneDrive/web personal/img/error.png') center right no-repeat;
+	background:			#FFDDDD url('../img/error.png') center right no-repeat;
 	width:				100%;
 	margin:				0px 0px 5px 0px;
 	padding:			6px;
