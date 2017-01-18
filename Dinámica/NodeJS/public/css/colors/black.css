@@ -1,0 +1,62 @@
+/* ---------------- */
+/* Black Style		*/
+/* ---------------- */
+
+/* Color 1 | #000000 */
+/* ---------------- */
+nav#nav ul li a.active, nav#nav ul li a.active:hover, nav#nav ul li a.active:focus,
+ul.bjqs-controls li a:hover, ul.bjqs-controls li a:focus,
+ol.bjqs-markers li a:hover, ol.bjqs-markers li.active-marker a, .bgLight, .progress span, .jspDrag, .box-img-post,
+#field-send:hover, #field-send:focus, .btn.groups.active:hover, .btn.groups.active:focus
+{ background-color: #000000; }
+
+ul.bjqs-controls li a, ol.bjqs-markers li a, a:hover, a:focus,
+input[type="text"]:focus, input[type="password"]:focus, .input:focus, select:focus, textarea:focus, span.feat
+{ color: #000000; }
+
+ol.bjqs-markers li a, ol.bjqs-markers li a:hover, ol.bjqs-markers li.active-marker a,
+.btn:hover, .btn:focus, .btn:active, .btn.groups.active, .btn.groups:hover, .btn.groups:focus,
+input[type="text"]:focus, input[type="password"]:focus, .input:focus, select:focus, textarea:focus,
+#field-send:hover, #field-send:focus
+{ border-color: #000000; }
+
+
+/* Color 2 | #111111 */
+/* ---------------- */
+#mobile-nav-bt, #box-photo, #social a, a.readmore:hover, a.readmore:focus, a.readmore:active
+{ background-color: #111111; }
+
+#social a:hover, a:visited, a, a.readmore:visited, a.readmore, span.author
+{ color: #111111; }/* Darken */
+
+a.readmore:visited, a.readmore
+{ border: 1px solid #111111; }
+
+
+/* Color 3 | #222222 */
+/* ---------------- */
+.color-hover, #page h4:after, .btn:hover, .btn:focus, .btn:active, #field-send, #field-send,
+.btn.groups:hover, .btn.groups:focus,.btn.groups:active, .btn.groups.active, #leftSection ul li
+{ background-color: #222222; }
+::selection			{ background-color: #222222; }
+::-moz-selection	{ background-color: #222222; }
+
+.progress span, .jspDrag, h5, #page h1, #page h2, #page h3, #page h4, #page h6, #page label, #copyright p
+{ color: #222222; }
+
+#box-photo, #social a, #field-send, .line
+{ border-color: #222222; }
+
+ul.attributes li, ul.about li
+{ border-left-color: #222222; }
+
+
+/* Color 4 | #333333 */
+/* ---------------- */
+#leftSection #bio, #leftSection a.menu
+{ color: #333333; }
+
+#leftSection #columnLeft, #leftSection a.menu
+{ border-color: #333333; }
+
+@import 'default.css';
