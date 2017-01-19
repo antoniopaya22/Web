@@ -1,291 +1,437 @@
-/** 
- * ===================================================================
- * main js
- *
- * ------------------------------------------------------------------- 
- */ 
-
-(function($) {
-
-	"use strict";
-
-	/*---------------------------------------------------- */
-	/* Preloader
-	------------------------------------------------------ */ 
-   $(window).load(function() {
-
-      // will first fade out the loading animation 
-    	$("#loader").fadeOut("slow", function(){
-
-        // will fade out the whole DIV that covers the website.
-        $("#preloader").delay(300).fadeOut("slow");
-
-      });       
-
-  	})
 
 
-  	/*---------------------------------------------------- */
-  	/* FitText Settings
-  	------------------------------------------------------ */
-  	setTimeout(function() {
+/*  TABLA DE CONTENIDOS
+    ---------------------------
+    1. Loading
+    2. Action Buttons
+    3. Scroll plugins
+    4. Newsletter
+    5. PhotoSwipe Gallery Init
+*/
 
-   	$('#intro h1').fitText(1, { minFontSize: '42px', maxFontSize: '84px' });
+/* ------------------------------------- */
+/* 1. Loading ................ */
+/* ------------------------------------- */
 
-  	}, 100);
+$(window).load(function(){
+    "use strict";
 
+    setTimeout(function(){
+        $('#preloader').velocity({
 
-	/*---------------------------------------------------- */
-	/* FitVids
-	------------------------------------------------------ */ 
-  	$(".fluid-video-wrapper").fitVids();
+            opacity: "0",
 
+            complete: function(){
+                $("#loading").velocity("fadeOut", {
+                    duration: 1000,
+                    easing: [0.7,0,0.3,1],
+                }); 
+            }
+        })
 
-	/*---------------------------------------------------- */
-	/* Owl Carousel
-	------------------------------------------------------ */ 
-	$("#owl-slider").owlCarousel({
-        navigation: false,
-        pagination: true,
-        itemsCustom : [
-	        [0, 1],
-	        [700, 2],
-	        [960, 3]
-	     ],
-        navigationText: false
+    },1000);
+
+    setTimeout(function(){
+        $('.global-overlay').velocity({
+
+            translateX : "100%",
+            opacity : "1",
+
+        },
+
+        {
+            duration: 1000,
+            easing: [0.7,0,0.3,1],
+        })
+        
+        $(".map-container").addClass("fadeInRight").removeClass('opacity-0');
+
+    },1000);
+
+    setTimeout(function(){
+        $('#left-side').velocity({
+
+            opacity : "1",
+
+            complete: function(){
+
+            setTimeout(function() {
+                $('.text-intro').each(function(i) {
+                    (function(self) {
+                        setTimeout(function() {
+                            $(self).addClass('animated-middle fadeInUp').removeClass('opacity-0');
+                        },(i*150)+150);
+                        })(this);
+                    });
+                }, 0);
+            }
+
+        },
+
+        {
+            duration: 1000,
+            easing: [0.7,0,0.3,1],
+        })
+        
+    },1600);
+
+})
+
+$(document).ready(function(){
+    "use strict";
+
+    /* ------------------------------------- */
+    /* 2. Action Buttons ................... */
+    /* ------------------------------------- */
+
+    $('a#open-more-info').on( "click", function() {
+        $(".overlay").toggleClass("skew-part");
+        $("#right-side").toggleClass("hide-right");
+        $("#close-more-info").toggleClass("hide-close");
+        $('.mCSB_scrollTools').toggleClass('mCSB_scrollTools-left');
+        setTimeout(function() {
+            $("#mcs_container").mCustomScrollbar("scrollTo", "#right-side",{
+                scrollInertia:500,
+                callbacks:false
+            });
+        }, 350);
     });
 
+    $('button#close-more-info').on( "click", function() {
+        $(".overlay").addClass("skew-part");
+        $("#right-side").addClass("hide-right");
+        $("#close-more-info").addClass("hide-close");
+        $('.mCSB_scrollTools').removeClass('mCSB_scrollTools-left');
+        setTimeout(function() {
+            $("#mcs_container").mCustomScrollbar("scrollTo", "#right-side",{
+                scrollInertia:500,
+                callbacks:false
+            });
+        }, 350);
+    });
 
-	/*----------------------------------------------------- */
-	/* Alert Boxes
-  	------------------------------------------------------- */
-	$('.alert-box').on('click', '.close', function() {
-	  $(this).parent().fadeOut(500);
-	});	
+    // Youtube Variant
 
+    $('.expand-player').on( "click", function() {
 
-	/*----------------------------------------------------- */
-	/* Stat Counter
-  	------------------------------------------------------- */
-   var statSection = $("#stats"),
-       stats = $(".stat-count");
+        $('#left-side').velocity({
 
-   statSection.waypoint({
+            opacity: "0",
 
-   	handler: function(direction) {
+            complete: function(){
+                $('.global-overlay').velocity({
 
-      	if (direction === "down") {       		
+                    translateX : "-100%",
+                    opacity : "0",
 
-			   stats.each(function () {
-				   var $this = $(this);
+                },
 
-				   $({ Counter: 0 }).animate({ Counter: $this.text() }, {
-				   	duration: 4000,
-				   	easing: 'swing',
-				   	step: function (curValue) {
-				      	$this.text(Math.ceil(curValue));
-				    	}
-				  	});
-				});
+                {
+                    duration: 1000,
+                    easing: [0.7,0,0.3,1],
+                    delay: 500,
+                })
+            }
+        })
+    });
 
-       	} 
+    $('.compress-player').on( "click", function() {
 
-       	// trigger once only
-       	this.destroy();      	
+        $('.global-overlay').velocity({
 
-		},
-			
-		offset: "90%"
-	
-	});	
+            translateX : "100%",
+            opacity : "1",
 
+        },
 
-	/*---------------------------------------------------- */
-	/*	Masonry
-	------------------------------------------------------ */
-	var containerProjects = $('#folio-wrapper');
+        {
+            duration: 1000,
+            easing: [0.7,0,0.3,1],
+            delay: 0,
 
-	containerProjects.imagesLoaded( function() {
+            complete: function(){
 
-		containerProjects.masonry( {		  
-		  	itemSelector: '.folio-item',
-		  	resize: true 
-		});
+                $('#left-side').velocity({
 
-	});
+                    opacity: "1",
 
+                })
 
-	/*----------------------------------------------------*/
-	/*	Modal Popup
-	------------------------------------------------------*/
-   $('.item-wrap a').magnificPopup({
+            }
+        })
+    });
 
-      type:'inline',
-      fixedContentPos: false,
-      removalDelay: 300,
-      showCloseBtn: false,
-      mainClass: 'mfp-fade'
+    /* ------------------------------------- */
+    /* 3. Scroll plugins ................... */
+    /* ------------------------------------- */
 
-   });
+    $(function() {
+        $('body').bind('mousewheel', function(event) {
+          event.preventDefault();
+          var scrollTop = this.scrollTop;
+          this.scrollTop = (scrollTop + ((event.deltaY * event.deltaFactor) * -1));
+          //console.log(event.deltaY, event.deltaFactor, event.originalEvent.deltaMode, event.originalEvent.wheelDelta);
+        });
+    });
 
-   $(document).on('click', '.popup-modal-dismiss', function (e) {
-   	e.preventDefault();
-   	$.magnificPopup.close();
-   });
+    var ifTouchDevices = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|Windows Phone)/);
 
-	
-	/*-----------------------------------------------------*/
-  	/* Navigation Menu
-   ------------------------------------------------------ */  
-   var toggleButton = $('.menu-toggle'),
-       nav = $('.main-navigation');
+    // ScrollBar on Desktop, not on Touch devices for a perfect ergonomy
+    function scrollbar(){
 
-   // toggle button
-   toggleButton.on('click', function(e) {
+        if (ifTouchDevices){
+            $('body').addClass('scroll-touch');
 
-		e.preventDefault();
-		toggleButton.toggleClass('is-clicked');
-		nav.slideToggle();
+            $('a#open-more-info').on( "click", function() {
+                event.preventDefault();
+                var target = "#" + this.getAttribute('data-target');
+                $('body').animate({
+                    scrollTop: $(target).offset().top
+                }, 500);
+            });
+        } 
 
-	});
-
-   // nav items
-  	nav.find('li a').on("click", function() {   
-
-   	// update the toggle button 		
-   	toggleButton.toggleClass('is-clicked'); 
-   	// fadeout the navigation panel
-   	nav.fadeOut();   		
-   	     
-  	});
-
-
-   /*---------------------------------------------------- */
-  	/* Highlight the current section in the navigation bar
-  	------------------------------------------------------ */
-	var sections = $("section"),
-	navigation_links = $("#main-nav-wrap li a");	
-
-	sections.waypoint( {
-
-       handler: function(direction) {
-
-		   var active_section;
-
-			active_section = $('section#' + this.element.id);
-
-			if (direction === "up") active_section = active_section.prev();
-
-			var active_link = $('#main-nav-wrap a[href="#' + active_section.attr("id") + '"]');			
-
-         navigation_links.parent().removeClass("current");
-			active_link.parent().addClass("current");
-
-		}, 
-
-		offset: '25%'
-	});
-
-
-	/*---------------------------------------------------- */
-  	/* Smooth Scrolling
-  	------------------------------------------------------ */
-  	$('.smoothscroll').on('click', function (e) {
-	 	
-	 	e.preventDefault();
-
-   	var target = this.hash,
-    	$target = $(target);
-
-    	$('html, body').stop().animate({
-       	'scrollTop': $target.offset().top
-      }, 800, 'swing', function () {
-      	window.location.hash = target;
-      });
-
-  	});  
+        else {
+            $('body').mCustomScrollbar({
+                scrollInertia: 150,
+                axis            :"y"
+            });  
+        }
+    }
   
+    scrollbar();
 
-   /*---------------------------------------------------- */
-	/*  Placeholder Plugin Settings
-	------------------------------------------------------ */ 
-	$('input, textarea, select').placeholder()  
+    // Tooltips used on YouTube buttons
+    if (window.matchMedia("(min-width: 1025px)").matches) { 
+            
+        $(function () { $("[data-toggle='tooltip']").tooltip(); });
+
+    }
+
+    /* ------------------------------------- */
+    /* 4. Newsletter ........................ */
+    /* ------------------------------------- */
+
+    $("#notifyMe").notifyMe();
+
+    (function() {
+
+        var dlgtrigger = document.querySelector( '[data-dialog]' ),
+            somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog' ) ),
+            dlg = new DialogFx( somedialog );
+
+        dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+
+    })();
+
+    /* ------------------------------------- */
+    /* 5. PhotoSwipe Gallery Init .......... */
+    /* ------------------------------------- */
+
+    var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+    // parse slide data (url, title, size ...) from DOM elements 
+    // (children of gallerySelector)
+    var parseThumbnailElements = function(el) {
+        var thumbElements = el.childNodes,
+            numNodes = thumbElements.length,
+            items = [],
+            figureEl,
+            linkEl,
+            size,
+            item;
+
+        for(var i = 0; i < numNodes; i++) {
+
+            figureEl = thumbElements[i]; // <figure> element
+
+            // include only element nodes 
+            if(figureEl.nodeType !== 1) {
+                continue;
+            }
+
+            linkEl = figureEl.children[0]; // <a> element
+
+            size = linkEl.getAttribute('data-size').split('x');
+
+            // create slide object
+            item = {
+                src: linkEl.getAttribute('href'),
+                w: parseInt(size[0], 10),
+                h: parseInt(size[1], 10)
+            };
 
 
-  	/*---------------------------------------------------- */
-	/*	contact form
-	------------------------------------------------------ */
 
-	/* local validation */
-	$('#contactForm').validate({
+            if(figureEl.children.length > 1) {
+                // <figcaption> content
+                item.title = figureEl.children[1].innerHTML; 
+            }
 
-		/* submit via ajax */
-		submitHandler: function(form) {
+            if(linkEl.children.length > 0) {
+                // <img> thumbnail element, retrieving thumbnail url
+                item.msrc = linkEl.children[0].getAttribute('src');
+            } 
 
-			var sLoader = $('#submit-loader');
+            item.el = figureEl; // save link to element for getThumbBoundsFn
+            items.push(item);
+        }
 
-			$.ajax({      	
+        return items;
+    };
 
-		      type: "POST",
-		      url: "inc/sendEmail.php",
-		      data: $(form).serialize(),
-		      beforeSend: function() { 
+    // find nearest parent element
+    var closest = function closest(el, fn) {
+        return el && ( fn(el) ? el : closest(el.parentNode, fn) );
+    };
 
-		      	sLoader.fadeIn(); 
+    // triggers when user clicks on thumbnail
+    var onThumbnailsClick = function(e) {
+        e = e || window.event;
+        e.preventDefault ? e.preventDefault() : e.returnValue = false;
 
-		      },
-		      success: function(msg) {
+        var eTarget = e.target || e.srcElement;
 
-	            // Message was sent
-	            if (msg == 'OK') {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').hide();
-	               $('#contactForm').fadeOut();
-	               $('#message-success').fadeIn();   
-	            }
-	            // There was an error
-	            else {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').html(msg);
-		            $('#message-warning').fadeIn();
-	            }
+        // find root element of slide
+        var clickedListItem = closest(eTarget, function(el) {
+            return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+        });
 
-		      },
-		      error: function() {
+        if(!clickedListItem) {
+            return;
+        }
 
-		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please try again.");
-		         $('#message-warning').fadeIn();
+        // find index of clicked item by looping through all child nodes
+        // alternatively, you may define index via data- attribute
+        var clickedGallery = clickedListItem.parentNode,
+            childNodes = clickedListItem.parentNode.childNodes,
+            numChildNodes = childNodes.length,
+            nodeIndex = 0,
+            index;
 
-		      }
+        for (var i = 0; i < numChildNodes; i++) {
+            if(childNodes[i].nodeType !== 1) { 
+                continue; 
+            }
 
-	      });     		
-  		}
+            if(childNodes[i] === clickedListItem) {
+                index = nodeIndex;
+                break;
+            }
+            nodeIndex++;
+        }
 
-	});
 
 
- 	/*----------------------------------------------------- */
-  	/* Back to top
-   ------------------------------------------------------- */ 
-	var pxShow = 300; // height on which the button will show
-	var fadeInTime = 400; // how slow/fast you want the button to show
-	var fadeOutTime = 400; // how slow/fast you want the button to hide
-	var scrollSpeed = 300; // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
+        if(index >= 0) {
+            // open PhotoSwipe if valid index found
+            openPhotoSwipe( index, clickedGallery );
+        }
+        return false;
+    };
 
-   // Show or hide the sticky footer button
-	jQuery(window).scroll(function() {
+    // parse picture index and gallery index from URL (#&pid=1&gid=2)
+    var photoswipeParseHash = function() {
+        var hash = window.location.hash.substring(1),
+        params = {};
 
-		if (!( $("#header-search").hasClass('is-visible'))) {
+        if(hash.length < 5) {
+            return params;
+        }
 
-			if (jQuery(window).scrollTop() >= pxShow) {
-				jQuery("#go-top").fadeIn(fadeInTime);
-			} else {
-				jQuery("#go-top").fadeOut(fadeOutTime);
-			}
+        var vars = hash.split('&');
+        for (var i = 0; i < vars.length; i++) {
+            if(!vars[i]) {
+                continue;
+            }
+            var pair = vars[i].split('=');  
+            if(pair.length < 2) {
+                continue;
+            }           
+            params[pair[0]] = pair[1];
+        }
 
-		}		
+        if(params.gid) {
+            params.gid = parseInt(params.gid, 10);
+        }
 
-	});		
+        return params;
+    };
 
-})(jQuery);
+    var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+        var pswpElement = document.querySelectorAll('.pswp')[0],
+            gallery,
+            options,
+            items;
+
+        items = parseThumbnailElements(galleryElement);
+
+        // define options (if needed)
+        options = {
+
+            // define gallery index (for URL)
+            galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+            getThumbBoundsFn: function(index) {
+                // See Options -> getThumbBoundsFn section of documentation for more info
+                var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                    pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                    rect = thumbnail.getBoundingClientRect(); 
+
+                return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
+            }
+
+        };
+
+        // PhotoSwipe opened from URL
+        if(fromURL) {
+            if(options.galleryPIDs) {
+                // parse real index when custom PIDs are used 
+                // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                for(var j = 0; j < items.length; j++) {
+                    if(items[j].pid === index) {
+                        options.index = j;
+                        break;
+                    }
+                }
+            } else {
+                // in URL indexes start from 1
+                options.index = parseInt(index, 10) - 1;
+            }
+        } else {
+            options.index = parseInt(index, 10);
+        }
+
+        // exit if index not found
+        if( isNaN(options.index) ) {
+            return;
+        }
+
+        if(disableAnimation) {
+            options.showAnimationDuration = 0;
+        }
+
+        // Pass data to PhotoSwipe and initialize it
+        gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+        gallery.init();
+    };
+
+    // loop through all gallery elements and bind events
+    var galleryElements = document.querySelectorAll( gallerySelector );
+
+    for(var i = 0, l = galleryElements.length; i < l; i++) {
+        galleryElements[i].setAttribute('data-pswp-uid', i+1);
+        galleryElements[i].onclick = onThumbnailsClick;
+    }
+
+    // Parse URL and open gallery if it contains #&pid=3&gid=1
+    var hashData = photoswipeParseHash();
+    if(hashData.pid && hashData.gid) {
+        openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
+    }
+};
+
+// execute above function
+initPhotoSwipeFromDOM('.my-gallery');
+
+});

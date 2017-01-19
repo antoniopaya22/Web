@@ -1,760 +1,206 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
-<head>
+<html lang="en-us" class="no-js">
 
-    <meta charset="utf-8">
-	<title>Antonio Payá</title>
-	<meta name="description" content="Antonio Payá's personal website.">  
-	<meta name="author" content="Antonio Payá">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<head>
+		<meta charset="utf-8">
+        <title>Antonio Payá</title>
+        <meta name="description" content="Página web personal de Antonio Payá González">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Antonio Payá">
 
- 	<!-- CSS -->
-   <link rel="stylesheet" href="css/base.css">  
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">     
+        <link rel="shortcut icon" href="img/favicon.ico">
 
-   <!-- JS -->   
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+		<!-- JS -->
+		<script src="js/modernizr.custom.js"></script>
 
-	<link rel="icon" type="image/png" href="favicon.ico">
+	</head>
+	
+	<body>
 
-</head>
+		<!-- YouTube link -->
+		<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=nrs7uXh70JE',containment:'body',autoPlay:true, mute:false, startAt:0, stopAt:0, opacity:1}"></a>
 
-<body id="top">
 
-	<!-- HEADER -->
-   <header>   	
-   	<div class="row">
-   		<div class="top-bar">
-   			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-	   		<div class="logo">
-		         <a href="index.html">Menu</a>
-		      </div>		      
+		<div class="global-overlay">
+			<div class="overlay skew-part light-overlay">
 
-		   	<nav id="main-nav-wrap">
-					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
-						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>				
-						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>			
+				<div id='stars'></div>
+				<div id='stars2'></div>
+				<div id='stars3'></div>
+
+			</div>
+		</div>
+
+		<!-- Inicio -->
+		<section id="left-side">
+
+			<!-- LOGO -->
+			<img src="img/logo.jpg" alt="" class="brand-logo" />
+
+			<div class="content">
+
+				<h1 class="text-intro opacity-0">Hola, me llamo Antonio<br>
+					Y esta es mi web personal.</h1>
+
+				<h2 class="text-intro opacity-0">Tienes la opción de ver la página en español o en inglés. /  You have the option 
+					to see the Website in Spanish or English.
+				</h2>
+
+				<nav>
+					<ul>
+						<li>
+							<a href="web/español.html" id="open-more-info" data-target="right-side" class="light-btn text-intro opacity-0">Ver en Español</a>
+						</li>
+						<li>
+							<a href="web/ingles.html" data-dialog="somedialog" class="action-btn trigger text-intro opacity-0">See in English</a>
+						</li>
 					</ul>
-				</nav>    		
-   		</div> <!-- /barra superior --> 
-   		
-   	</div> <!-- /fila --> 		
-   </header> <!-- /Header -->
+				</nav>
 
-	<!-- HOME -->
-   <section id="intro">   
+			</div>
 
-   	<div class="intro-overlay"></div>	
-
-   	<div class="intro-content">
-   		<div class="row">
-
-   			<div class="col-twelve">
-
-	   			<h5>Hello, World.</h5>
-	   			<h1>I'm Antonio Payá.</h1>
-
-	   			<p class="intro-position">
-	   				<span>Front-end Developer</span>
-	   				<span>Back-end Developer</span> 
-	   				<span>Programmer</span>
-	   			</p>
-
-	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
-
-	   		</div>  
-   			
-   		</div>   		 		
-   	</div> <!-- /intro-content --> 
-
-   	<ul class="intro-social">        
-         <li><a href="https://www.facebook.com/AntonioPaya22"><i class="fa fa-facebook"></i></a></li>
-         <li><a href="https://github.com/antonioalfa22"><i class="fa fa-github"></i></a></li>
-         <li><a href="https://twitter.com/AntonioPaya22"><i class="fa fa-twitter"></i></a></li>
-         <li><a href="https://instagram.com/antonioalfa22"><i class="fa fa-instagram"></i></a></li>
-         <li><a href="https://www.youtube.com/user/antonioalfa22"><i class="fa fa-youtube"></i></a></li>
-      </ul> <!-- /intro-social -->      	
-
-   </section> <!-- /intro -->
-
-
-   <!-- ABOUT -->
-   <section id="about">  
-
-   	<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>About</h5>
-   			<h1>Let me introduce myself.</h1>
-
-   			<div class="intro-info">
-
-   				<img src="images/profile-pic.jpg" alt="Profile Picture"> <!-- IMÁGEN PERFIL -->
+			<!-- Social -->
+			<div class="social-icons">
 
-   				<p class="lead">My name is Antonio Payá and I am currently studying at the University of Oviedo in the branch of Software Engineering.I often create a lot of small-scale projects that I later upload to GitHub.</p>
-   			</div>   			
+				<a href="https://www.facebook.com/AntonioPaya22"><i class="fa fa-facebook"></i></a>
+	            <a href="https://github.com/antonioalfa22"><i class="fa fa-github"></i></a>
+	            <a href="https://twitter.com/AntonioPaya22"><i class="fa fa-twitter"></i></a>
+	            <a href="https://instagram.com/antonioalfa22"><i class="fa fa-instagram"></i></a>
+	            <a href="https://www.youtube.com/user/antonioalfa22"><i class="fa fa-youtube"></i></a>
 
-   		</div>   		
-   	</div> <!-- /section-intro -->
+			</div>
 
-   	<div class="row about-content">
+		</section>
+		<!-- /Inicio -->
 
-   		<div class="col-six tab-full">
+		<!-- OPEN - Player control -->
+		<nav id="player-nav">
+			<ul>
+				<li data-toggle="tooltip" data-placement="top" data-title="Play" data-trigger="hover">
+					<a onclick="$('#bgndVideo').playYTP()"><i class="fa fa-play"></i></a>
+				</li>
 
-   			<h3>Profile</h3>
-   			<p>Here are my personal details:</p>
+				<li data-toggle="tooltip" data-placement="top" data-title="Pause" data-trigger="hover">
+					<a onclick="$('#bgndVideo').pauseYTP()"><i class="fa fa-pause"></i></a>
+				</li>
 
-   			<ul class="info-list">
-   				<li>
-   					<strong>Fullname:</strong>
-   					<span>Antonio Payá González</span>
-   				</li>
-   				<li>
-   					<strong>Birth Date:</strong>
-   					<span>May 16, 1997</span>
-   				</li>
-   				<li>
-   					<strong>University:</strong>
-   					<span>University of Oviedo, Software Engineering</span>
-   				</li>
-   				<li>
-   					<strong>Website:</strong>
-   					<span>www.antoniopg.esy.es</span>
-   				</li>
-   				<li>
-   					<strong>Email:</strong>
-   					<span>antonioalfa22@gmail.com</span>
-   				</li>
+				<li class="full-play" data-toggle="tooltip" data-placement="top" data-title="Fullscreen" data-trigger="hover">
+					<a class="expand-player"><i class="fa fa-expand"></i></a>
+				</li>
 
-   			</ul> <!-- /info-list -->
+				<li class="comp-play display-none" data-toggle="tooltip" data-placement="top" data-title="Reduce" data-trigger="hover">
+					<a class="compress-player"><i class="fa fa-compress"></i></a>
+				</li>
 
-   		</div>
+			</ul>
+		</nav> <!-- CLOSE - Player control -->
 
-   		<div class="col-six tab-full">
 
-   			<h3>Skills</h3>
-   			<p>Below I show graphically my skills with the programming languages ​​that I like to use.</p>
+			<footer>
 
-				<ul class="skill-bars">
-				   <li>
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>HTML5,CSS3 and JS</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent95"><span>95%</span></div>
-				   	<strong>Java</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent70"><span>70%</span></div>
-				   	<strong>Python and Ruby</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent95"><span>95%</span></div>
-				   	<strong>C#</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent70"><span>70%</span></div>
-				   	<strong>C,C++,PHP and others</strong>
-				   </li>
-      
-				</ul> <!-- /skills-->		
+				<p>© Antonio Payá González - 2017</p>
 
-   		</div>
+			</footer>
 
-   	</div>
+		</section>
 
-   	<div class="row button-section">
-   		<div class="col-twelve">
-   			<a href="#contact" title="Contact me" class="button stroke smoothscroll">Contact me</a>
-   			<a href="#" title="Download CV" class="button button-primary">Download CV</a>
-   		</div>   		
-   	</div>
-
-   </section> <!-- /process-->    
-
-
-   <!-- RESUME-->
-	<section id="resume" class="grey-section">
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Resume</h5>
-   			<h1>More of my credentials.</h1>
-
-   			<p class="lead">Here are some of my achievements throughout my personal and academic life.</p>
-
-   		</div>   		
-   	</div> <!-- /section-intro--> 
-
-   	<div class="row resume-timeline">
-
-   		<div class="col-twelve resume-header">
-
-   			<h2>Work Experience</h2>
-
-   		</div> <!-- /resume-header -->
-
-   		<div class="col-twelve">
-
-   			<div class="timeline-wrap">
-
-   				<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-film"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>International Film Jury</h3>
-	   					<p>November 2014 - December 2014</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Ajyal Youth Film Festival</h4>
-	   					<p>Spanish representative at the international film festival in Doha (Ajyal Youth Film Festival),
-	   						as a member of the jury.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-video-camera"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>International Film Jury</h3>
-	   					<p>July 2014 - August 2014</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Giffoni Film Festival</h4>
-	   					<p>Spanish representative at the international film festival of Giffoni, which took place in 2014, as a member of the jury.</p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			
-   			</div> <!-- /timeline-wrap -->   			
-
-   		</div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /resume-timeline -->
-   	
-   	<div class="row resume-timeline">
-
-   		<div class="col-twelve resume-header">
-
-   			<h2>Education</h2>
-
-   		</div> <!-- /resume-header -->
-
-   		<div class="col-twelve">
-
-   			<div class="timeline-wrap">
-
-   				<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Software Engineering</h3>
-	   					<p>September 2015 - Present</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>University of Oviedo</h4>
-	   					<p></p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
-
-	   				<div class="timeline-header">
-	   					<h3>Web testing with Selenium</h3>
-	   					<p>February 2016</p>
-	   				</div>
-
-	   				<div class="timeline-content">
-	   					<h4>Selenium Web Testing Workshop</h4>
-	   					<p></p>
-	   				</div>
-
-	   			</div> <!-- /timeline-block -->
-
-	   			
-
-   			</div> <!-- /timeline-wrap -->   			
-
-   		</div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /resume-timeline -->
 		
-	</section> <!-- /features -->
 
+		<!-- Root element of PhotoSwipe, the gallery. Must have class pswp. -->
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-	<!-- PORTFOLIO -->
-	<section id="portfolio">
+		    <!-- Background of PhotoSwipe. 
+	        	It's a separate element as animating opacity is faster than rgba(). -->
+		    <div class="pswp__bg"></div>
 
-		<div class="row section-intro">
-   		<div class="col-twelve">
+		    <!-- Slides wrapper with overflow:hidden. -->
+		    <div class="pswp__scroll-wrap">
 
-   			<h5>Portfolio</h5>
-   			<h1>Check Out Some of My Works.</h1>
+		        <!-- Container that holds slides. 
+		            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+		            Don't modify these 3 pswp__item elements, data is added later on. -->
+		        <div class="pswp__container">
+		            <div class="pswp__item"></div>
+		            <div class="pswp__item"></div>
+		            <div class="pswp__item"></div>
+		        </div>
 
-   			<p class="lead">You can see the code of all my projects in the repositories of GitHub</p>
+		        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+		        <div class="pswp__ui pswp__ui--hidden">
 
-   		</div>   		
-   	</div> <!-- /section-intro--> 
+		            <div class="pswp__top-bar">
 
-   	<div class="row portfolio-content">
+		                <!--  Controls are self-explanatory. Order can be changed. -->
 
-   		<div class="col-twelve">
+		                <div class="pswp__counter"></div>
 
-   			<!-- portfolio-wrapper -->
-	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack" style="position: relative; height: 1788.87px;">
+		                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 
-	         	<div class="bgrid folio-item" style="position: absolute; left: 0px; top: 0px;">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/liberty.jpg" alt="Code">
-	                  <a href="#modal-01" class="overlay">	                  	           
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title">Projects</h3>	     					    
-		     					    	 <span class="folio-types">
-		     					       	  Code
-		     					       </span>
-		     					   </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div>	               
-	        		</div> <!-- /folio-item -->
+		                <button class="pswp__button pswp__button--share" title="Share"></button>
 
-	        		<div class="bgrid folio-item" style="position: absolute; left: 550px; top: 0px;">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/shutterbug.jpg" alt="Graphic design">
-	               	<a href="#modal-02" class="overlay">              		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Graphic creations</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Graphic design
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
+		                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
 
-	            <div class="bgrid folio-item" style="position: absolute; left: 550px; top: 550px;">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/clouds.jpg" alt="Robots">
-	                  <a href="#modal-03" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Robots</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Arduino and Raspberry pi
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
+		                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
-	            <div class="bgrid folio-item" style="position: absolute; left: 0px; top: 687px;">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/beetle.jpg" alt="Gallery">
-	                  <a href="#modal-04" class="overlay">                  	                 
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Instagram</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Gallery
-		     					      </span>		     		
-		     					   </div>  	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->     
+		                <div class="pswp__preloader">
+		                    <div class="pswp__preloader__icn">
+		                      <div class="pswp__preloader__cut">
+		                        <div class="pswp__preloader__donut"></div>
+		                      </div>
+		                    </div>
+		                </div>
 
-	            <!-- modal popups - begin
-	            ============================================================= -->
-	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+		            </div>
 
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-liberty.jpg" alt="Code">
-				     	</div>      	
+		            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+		                <div class="pswp__share-tooltip"></div> 
+		            </div>
 
-					   <div class="description-box">
-					      <h4>Projects</h4>		      
-					      <p>In my GitHub repositories you can find all the code of my programming projects.</p>
+		            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+		            </button>
 
-					      <div class="categories">Code</div>			               
-					   </div>
+		            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+		            </button>
 
-			         <div class="link-box">
-			            <a href="https://github.com/antonioalfa22">See</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
+		            <div class="pswp__caption">
+		                <div class="pswp__caption__center"></div>
+		            </div>
 
-				   </div> <!-- /modal-01 -->
+		        </div>
 
-				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+		    </div>
 
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-shutterbug.jpg" alt="Graphic creations">
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Graphic creations</h4>		      
-					      <p>In Tumblr you will find some of my creations in Photoshop, or some videos made with 
-					      	After Effects and Cinema 4D</p>
-
-					      <div class="categories">Graphic design</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="http://antonioalfa.tumblr.com/">See in Tumblr</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-02 -->
-
-				   <div id="modal-03" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-clouds.jpg" alt="Robots">
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Robots</h4>		      
-					      <p>Here you can see images, videos and the code of some robots that I create with
-					       Arduino and Raspberry Pi</p>
-
-					      <div class="categories">Arduino and Raspberry pi</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="#">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-03 -->
-
-				   <div id="modal-04" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-beetle.jpg" alt="Gallery">
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Instagram</h4>		      
-					      <p>Personal photos that I upload to instagram.</p>
-
-					      <div class="categories">Gallery</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://instagram.com/antonioalfa22">See</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-04 -->      
-
-				   <!-- modal popups - end
-	            ============================================================= -->
-
-	         </div> <!-- /portfolio-wrapper --> 
-
-   		</div>  <!-- /twelve -->   
-
-   	</div> <!-- /portfolio-content --> 
-		
-	</section>
+		</div>
+		<!-- /. Fin de Pagina -->
 	
-	<!-- stats Section
-   ================================================== -->
-	<section id="stats" class="count-up">
+	<!-- JQUERY -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
-		<div class="row">
-			<div class="col-twelve">
+	<!-- PhotoSwipe -->
+	<script src="js/velocity.min.js"></script> 
 
-				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+	<!-- PhotoSwipe -->
+	<script src="js/velocity.ui.min.js"></script> 
 
-					<div class="bgrid stat">
+	<!-- Slideshow/Image plugin -->
+	<script src="js/vegas-youtube-mobile.js"></script>
 
-						<div class="icon-part">
-							<i class="icon-pencil-ruler"></i>
-						</div>
+	<!-- YouTube plugin -->
+	<script src="js/jquery.mb.YTPlayer.js"></script>
 
-						<h3 class="stat-count">
-							150
-						</h3>
+	<!-- Scroll plugin -->
+	<script src="js/jquery.mousewheel.js"></script>
 
-						<h5 class="stat-title">
-							Projects Completed
-						</h5>
-
-					</div> <!-- /stat -->					
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-users"></i>
-						</div>
-
-						<h3 class="stat-count">
-							12
-						</h3>
-
-						<h5 class="stat-title">
-							Happy Clients
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-badge"></i>
-						</div>
-
-						<h3 class="stat-count">
-							2
-						</h3>
-
-						<h5 class="stat-title">
-							Awards Received
-						</h5>
-
-					</div> <!-- /stat -->									
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-light-bulb"></i>
-						</div>
-
-						<h3 class="stat-count">
-							1200
-						</h3>
-
-						<h5 class="stat-title">
-							Crazy Ideas
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-cup"></i>
-						</div>
-
-						<h3 class="stat-count">
-							1500
-						</h3>
-
-						<h5 class="stat-title">
-							Coffee Cups
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-clock"></i>
-						</div>
-
-						<h3 class="stat-count">
-							7200
-						</h3>
-
-						<h5 class="stat-title">
-							Hours
-						</h5>
-
-					</div> <!-- /stat -->
-
-				</div> <!-- /stats-list -->
-
-			</div> <!-- /twelve -->
-		</div> <!-- /row -->
-
-	</section> <!-- /stats -->
-
+	<!-- Main JS File -->
+	<script src="js/main.js"></script>
 	
-   <!-- contact
-   ================================================== -->
-	<section id="contact">
+	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Contact</h5>
-   			<h1>I'd Love To Hear From You.</h1>
-
-   			<p class="lead">You can send me an email directly from here:</p>
-
-   		</div> 
-   	</div> <!-- /section-intro -->
-
-   	<div class="row contact-form">
-
-   		<div class="col-twelve">
-
-            <!-- form -->
-            <form name="contactForm" id="contactForm" method="post" action="">
-      			<fieldset>
-
-                  <div class="form-field">
- 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-                  </div>
-                  <div class="form-field">
-	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-	               </div>
-                  <div class="form-field">
-	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-	               </div>                       
-                  <div class="form-field">
-	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-	               </div>                      
-                 <div class="form-field">
-                     <button class="submitform">Submit</button>
-                     <div id="submit-loader">
-                        <div class="text-loader">Sending...</div>                             
-       				      <div class="s-loader">
-								  	<div class="bounce1"></div>
-								  	<div class="bounce2"></div>
-								  	<div class="bounce3"></div>
-								</div>
-							</div>
-                  </div>
-
-      			</fieldset>
-      		</form> <!-- Form End -->
-
-            <!-- contact-warning -->
-            <div id="message-warning">            	
-            </div>            
-            <!-- contact-success -->
-      		<div id="message-success">
-               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-      		</div>
-
-         </div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /contact-form -->
-
-   	<div class="row contact-info">
-
-   		<div class="col-four tab-full">
-
-   			<div class="icon">
-   				<i class="icon-pin"></i>
-   			</div>
-
-   			<h5>Where to find me</h5>
-
-   			<p>
-            Gijón, Asturias<br>
-            Spain<br>
-            </p>
-
-   		</div>
-
-   		<div class="col-four tab-full collapse">
-
-   			<div class="icon">
-   				<i class="icon-mail"></i>
-   			</div>
-
-   			<h5>Email Me At</h5>
-
-   			<p>antonioalfa22@gmail.com<br>
-			   	antonioalfa22@hotmail.es		     
-			   </p>
-
-   		</div>
-
-   		<div class="col-four tab-full">
-
-   			<div class="icon">
-   				<i class="icon-phone"></i>
-   			</div>
-
-   			<h5>Call Me At</h5>
-
-   			<p>
-			   </p>
-
-   		</div>
-   		
-   	</div> <!-- /contact-info -->
-		
-	</section> <!-- /contact -->
-
-
-   <!-- footer
-   ================================================== -->
-
-   <footer>
-     	<div class="row">
-
-     		<div class="col-six tab-full pull-right social">
-
-     			<ul class="footer-social">        
-			      <li><a href="https://www.facebook.com/AntonioPaya22"><i class="fa fa-facebook"></i></a></li>
-		          <li><a href="https://github.com/antonioalfa22"><i class="fa fa-github"></i></a></li>
-		          <li><a href="https://twitter.com/AntonioPaya22"><i class="fa fa-twitter"></i></a></li>
-		          <li><a href="https://instagram.com/antonioalfa22"><i class="fa fa-instagram"></i></a></li>
-		          <li><a href="https://www.youtube.com/user/antonioalfa22"><i class="fa fa-youtube"></i></a></li>
-			   </ul> 
-	      		
-	      </div>
-
-      	<div class="col-six tab-full">
-	      	<div class="copyright">
-		        	<span>© Copyright Antonio Payá 2017.</span> 
-		        	<span>Design by <a href="https://www.facebook.com/AntonioPaya22">Antonio Payá</a></span>	         	
-		         </div>		                  
-	      	</div>
-
-	      	<div id="go-top">
-		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-		      </div>
-
-      	</div> <!-- /row -->     	
-   </footer>  
-
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
-
-   <!-- JS --> 
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
-
-</body>
+	</body>
 
 </html>
