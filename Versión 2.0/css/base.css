@@ -169,7 +169,6 @@ html {
 body {
 	font-weight: normal;
 	line-height: 1;
-	text-rendering: optimizeLegibility;
 	word-wrap: break-word;
 	-webkit-overflow-scrolling: touch;
 	-webkit-text-size-adjust: none;
@@ -202,7 +201,6 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-font-variant-ligatures: common-ligatures;
 	-moz-font-variant-ligatures: common-ligatures;
 	font-variant-ligatures: common-ligatures;
-	text-rendering: optimizeLegibility;
 }
 em, i {
 	font-style: italic;
@@ -257,7 +255,6 @@ textarea {
 	-moz-appearance: none;
 	-ms-appearance: none;
 	-o-appearance: none;
-	appearance: none;
 }
 
 

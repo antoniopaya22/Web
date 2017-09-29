@@ -69,7 +69,6 @@ h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
 	font-family: "roboto-bold", sans-serif;
 	color: #FFFFFF;
 	font-style: normal;
-	text-rendering: optimizeLegibility;
 	margin-bottom: 2.1rem;
 }
 h3, .h03, h4, .h04 {
@@ -287,7 +286,7 @@ dd {
  */
 
 button, .button {
-	margin-bottom: 1.2;
+	margin-bottom: 1.2rem;
 }
 fieldset {
 	margin-bottom: 1.5rem;
@@ -429,11 +428,6 @@ select {
 	padding: 0;
 }
 .ss-custom-select select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
-	-o-appearance: none;
-	appearance: none;
 	text-indent: 0.01px;
 	text-overflow: '';
 	margin: 0;
