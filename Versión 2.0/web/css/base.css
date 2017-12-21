@@ -1,11 +1,7 @@
 /**
  * =================================================================== 
  *
- *  Kards v1.0 Base Stylesheet
- *  url: styleshout.com
- *  03-01-2016
- *  ------------------------------------------------------------------
- *  TOC:
+ *  INDICE:
  *  01. reset
  *  02. basic/base setup styles
  *  03. grid
@@ -793,9 +789,6 @@ textarea {
  * ------------------------------------------------------------------- 
  */
 
-/**
- * Clearing - (http://nicolasgallagher.com/micro-clearfix-hack/
- */
 .group:before,
 .group:after {
 	content: "";
