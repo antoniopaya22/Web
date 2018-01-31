@@ -1,101 +1,646 @@
-<!DOCTYPE html>
-<html class="no-js" lang="es">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
 
-    <meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Pagina web personal de Antonio Paya Gonzalez">
+	<meta name="author" content="Antonio Paya Gonzalez">
+
 	<title>Antonio Payá</title>
-	<meta name="author" content="Antonio Payá González">
-	<meta name="description" content="Página web personal de Antonio Payá">  
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
- 	<!-- CSS -->
-   <link rel="stylesheet" href="css/base.css">  
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">     
-
-   <!-- Modernizr -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicon -->
-	<link rel="icon" type="image/ico" href="img/favicon.ico">
+  <!-- Web Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+	<!-- Bootstrap -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- Font Awesome CSS -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<!-- Animate css -->
+  <link href="assets/css/animate.css" rel="stylesheet">
+  <!-- Magnific css -->
+	<link href="assets/css/magnific-popup.css" rel="stylesheet">
+	<!-- CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="assets/images/ico/favicon.png">
+  <link rel="shortcut icon" href="assets/images/ico/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/images/ico/apple-touch-icon-57-precomposed.png">
 
 </head>
 
 <body>
+	<!-- Preloader -->
+	<div id="tt-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
+		</div>
+	</div>
 
-	<!-- Header -->
-   <header class="main-header">
-   	<div class="row">
-   		<div class="logo">
-	         <a href="index.html">Antonio Payá</a>
-	      </div>   		
-   	</div>   
+	<!-- Home -->
+	<section id="inicio" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+		<div class="intro">
+			<div class="intro-sub">Hello World</div>
+			<h1>Antonio <span>Payá</span> Gonzalez</h1>
+			<p>Full-Stack Web Developer / <span>Desarrollador Web Full-Stack</span></p>
 
-   </header> <!-- /header -->
 
-  
+			<!-- Social -->
+      <div class="social-icons">
+        <ul class="list-inline">
+					<li><a href="https://www.facebook.com/AntonioPaya22"><i class="fa fa-facebook"></i></a></li>
+			    <li><a href="https://github.com/antonioalfa22"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://twitter.com/AntonioPaya22"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://instagram.com/antonioalfa22"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/antonioalfa22/"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+		</div>
 
-	<!-- main content 
-	================================================== -->
-   <main id="main" class="main-particulas">
+		<div class="mouse-icon">
+			<div class="wheel"></div>
+		</div>
+	</section>
 
-   	<div class="content-wrap">
 
-		   <div class="shadow-overlay"></div>
-
-		   <div class="main-content">
-		   	<div class="row">
-		   		<div class="col-twelve">
-			  		
-			  			<h1 class="kern-this">Esta es mi web personal</h1>
-			  			<p>
-						Tienes la opción de ver la página en español o en inglés. / You have the option to see the Website in Spanish or English. 
-			  			</p>
-
-			  			<div class="botones">
-							<a href="web/español.html" id="open-more-info" data-target="right-side" class="light-btn text-intro opacity-0">Ver en Español</a>
-							<a href="web/ingles.html" data-dialog="somedialog" class="action-btn trigger text-intro opacity-0">See in English</a>
-				      	</div>	   			
-
-			   	</div> <!-- /twelve --> 		   			
-		   	</div> <!-- /row -->    		 		
-		   </div> <!-- /main-content --> 
-
-		   <footer>
-		   	<div class="row">
-
-		   		<div class="col-seven tab-full social-links pull-left">
-			   		<ul>
-				   		<li><a href="https://www.facebook.com/AntonioPaya22"><i class="fa fa-facebook"></i></a></li>
-			            <li><a href="https://github.com/antonioalfa22"><i class="fa fa-github"></i></a></li>
-			            <li><a href="https://twitter.com/AntonioPaya22"><i class="fa fa-twitter"></i></a></li>
-			            <li><a href="https://instagram.com/antonioalfa22"><i class="fa fa-instagram"></i></a></li>
-			            <li><a href="https://www.youtube.com/user/antonioalfa22"><i class="fa fa-youtube"></i></a></li>		
-				   	</ul>
-				   	<div class="credits">
-				   		<p>Design by <a href="http://antoniopg.esy.es/" title="antoniopg.esy.es">Antonio Payá</a></p>
-				   	</div>  	   		
+	<!-- Menu -->
+	<header class="header">
+		<nav class="navbar navbar-custom" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Colapsar navegación</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Logo de la web"></a>
 				</div>
-				<div class="col-eight">
-    				<a href="https://validator.w3.org/check?uri=referer">
-        				<img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-multimedia-semantics-storage.png" width="261" height="64" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Multimedia, Semantics, and Offline &amp; Storage" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Multimedia, Semantics, and Offline &amp; Storage"></a>	
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#inicio">Home</a></li>
+						<li><a href="#sobre_mi">Sobre mí</a></li>
+						<li><a href="#resume">Resumen</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+						<li><a class="idioma" href="#"><img src="assets/images/en.png" alt="Imágen de perfil"></a></li>
+					</ul>
 				</div>
-		   	</div> <!-- /row -->    		  		
-		   </footer>
+			</div>
+		</nav>
+	</header>
 
-		</div> <!-- /content-wrap -->
-   
-   </main> <!-- /main-content -->
 
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
+    <!-- Sobre mi -->
+    <section id="sobre_mi" class="about-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Sobre mí</h2>
 
-   <!-- Java Script --> 
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
+        <div class="row">
 
+          <div class="col-md-4 col-md-push-8">
+            <div class="biography">
+              <div class="myphoto">
+                <img src="assets/images/perfil.jpeg" alt="Imágen de perfil">
+              </div>
+              <ul>
+                <li><strong>Nombre:</strong> Antonio Payá González</li>
+                <li><strong>Fecha de nacimiento:</strong> 16 de Mayo de 1997</li>
+                <li><strong>País:</strong> España</li>
+                <li><strong>Email:</strong> antonioalfa22@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-8 col-md-pull-4">
+            <div class="short-info wow fadeInUp">
+              <h3>Perfil</h3>
+              <p>Mi nombre es Antonio Payá y actualmente estoy estudiando en la Universidad de Oviedo,
+								 en la rama de Ingeniería Informática del Software. Normalmente suelo crear algunos mini-proyectos
+								 o programas que puedes encontrar en mi perfil de GitHub.</p>
+            </div>
+
+            <div class="short-info wow fadeInUp">
+              <h3>¿Qué se hacer?</h3>
+              <p>Gracias a mi formación en la Escuela de Ingeniería Informática del Software en la Universidad de Oviedo
+								y a varios cursos que realizo de forma autónoma he adquirido una serie de competencias como son: </p>
+
+              <ul class="list-check">
+                <li>Desarrollo de aplicaciones Android</li>
+                <li>Web services</li>
+                <li>Diseño Gráfico</li>
+                <li>Robótica en Arduino y Rapsberry PI</li>
+                <li>IoT Apps</li>
+                <li>Edición de Vídeo</li>
+								<li>Diseño de algoritmos</li>
+								<li>Desarrollo de aplicaciones web</li>
+								<li>Desarrollo de aplicaciones de escritorio</li>
+              </ul>
+            </div>
+
+            <div class="download-button">
+              <a class="btn btn-info btn-lg" href="#contacto"><i class="fa fa-paper-plane"></i>Contacta conmigo</a>
+              <a class="btn btn-primary btn-lg" href="#"><i class="fa fa-download"></i>Descarga mi CV</a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Video -->
+    <section id="video" class="video-section">
+      <div class="tf-bg-overlay">
+        <div class="container">
+          <div class="control">
+            <div class="video-intro text-center">
+              <button type="button" class="play-trigger" data-toggle="modal" data-target="#tour-video"><i class="fa fa-play"></i></button>
+              <h2>Video Introductorio</h2>
+            </div>
+
+            <!-- Video Modal -->
+            <div class="modal modal-video" id="tour-video">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Video Presentación</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="video-container">
+                      <iframe src="https://player.vimeo.com/video/253501180" name="vimeoplayer" id="nofocusvideo" width="500" height="281"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Resume  -->
+    <section id="resume" class="resume-section section-padding">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Resume</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Educación</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline">
+                            <li>
+                                <div class="posted-date">
+                                    <span class="month">2015 - 2019</span>
+                                </div>
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Ingeniería del Software</h3>
+                                            <span>Universidad de Oviedo, Asturias, España</span>
+                                        </div>
+
+                                        <div class="timeline-body">
+                                            <p>Actualmente curso el grado en Ingeniería Informática del Software de la Universidad
+																						de Oviedo, la cuál cuenta con el sello EURO-INF.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                    <span class="month">2016</span>
+                                </div>
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Web testing con Selenium</h3>
+                                            <span>COIIPA</span>
+                                        </div>
+
+                                        <div class="timeline-body">
+                                            <p>Curso de Web testing con Selenium impartido por el COIIPA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Experiencia</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline">
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                  <span class="month">2014</span>
+                                </div>
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Jurado internacional de Cine</h3>
+                                            <span>Ajyal Youth Film Festival</span>
+                                        </div>
+
+                                        <div class="timeline-body">
+                                            <p>Representante español en el festival internacional de cine en Doha
+																							(Ajyal Youth Film Festival), como miembro del jurado.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">2014</span>
+                                </div>
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Jurado internacional de Cine</h3>
+                                            <span>Giffoni Film Festival</span>
+                                        </div>
+
+                                        <div class="timeline-body">
+                                            <p>Representante español en el festival internacional de cine de Giffoni,
+																							que tuvo lugar en 2014, como miembro del jurado.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Skills</h2>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Java &amp; C#</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" ><span>95%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Python</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" ><span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-title"><h3>MEAN stack</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="skill-progress">
+              <div class="skill-title"><h3>C &amp; C++</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Android &amp; Kotlin</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" ><span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-title"><h3>HTML, CSS &amp; JS</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" ><span>95%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-chart text-center">
+          <h3>Otras skills</h3>
+        </div>
+
+        <div class="row more-skill text-center">
+          <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="91" data-color="e74c3c">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>SQL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="53" data-color="2ecc71">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>ElasticSearch</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="68" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Neo4J</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="68" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Ionic</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="78" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Arduino</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="88" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="works-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Proyectos</h2>
+
+        <ul class="list-inline" id="filter">
+            <li><a class="active" data-group="all">Todos</a></li>
+            <li><a data-group="BBDD">BBDD</a></li>
+            <li><a data-group="web">Web</a></li>
+            <li><a data-group="IoT">IoT</a></li>
+            <li><a data-group="Varios">Varios</a></li>
+        </ul>
+
+        <div class="row">
+          <div id="grid">
+								<!-- Elasticsearc -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "Varios", "BBDD"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/proyectos/elastic-correlate.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="https://github.com/antonioalfa22/Elasticsearch_Correlate"><i class="fa fa-link"></i></a>
+                  </div>
+                  <img src="assets/images/proyectos/elastic-correlate.jpg" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Elasticsearc Correlate</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+								<!-- Buscador -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "web"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/proyectos/buscador_interno.PNG"><i class="fa fa-search-plus"></i></a>
+                    <a href="https://github.com/antonioalfa22/Buscador_Interno"><i class="fa fa-link"></i></a>
+                  </div>
+                  <img src="assets/images/proyectos/buscador_interno.PNG" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Buscador Interno</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+								<!-- Neo4J WebApp -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "BBDD", "web"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/proyectos/neo4jwebapp.png"><i class="fa fa-search-plus"></i></a>
+                    <a href="https://github.com/antonioalfa22/Neo4J_WebApp"><i class="fa fa-link"></i></a>
+                  </div>
+                  <img src="assets/images/proyectos/neo4jwebapp.png" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Neo4J Web App</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+								<!-- Chat -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "Varios", "web"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/proyectos/chatweb.png"><i class="fa fa-search-plus"></i></a>
+                    <a href="https://github.com/antonioalfa22/ChatWeb"><i class="fa fa-link"></i></a>
+                  </div>
+                  <img src="assets/images/proyectos/chatweb.png" alt="image">
+                  <div class="portfolio-info">
+                    <h3>NodeJS &amp; Socket.io Chat</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+								<!-- GraphQuery -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "Varios", "BBDD"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/proyectos/graphquery.PNG"><i class="fa fa-search-plus"></i></a>
+                    <a href="https://github.com/antonioalfa22/GraphQuery"><i class="fa fa-link"></i></a>
+                  </div>
+                  <img src="assets/images/proyectos/graphquery.PNG" alt="image">
+                  <div class="portfolio-info">
+                    <h3>GraphQuery</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+								<!-- Web -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "web"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/proyectos/web.png"><i class="fa fa-search-plus"></i></a>
+                    <a href="https://github.com/antonioalfa22/Web"><i class="fa fa-link"></i></a>
+                  </div>
+                  <img src="assets/images/proyectos/web.png" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Web personal</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+								<!-- Bateria -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "Varios", "web"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/proyectos/Bateria.jpeg"><i class="fa fa-search-plus"></i></a>
+                    <a href="https://github.com/antonioalfa22/Hackathon"><i class="fa fa-link"></i></a>
+                  </div>
+                  <img src="assets/images/proyectos/Bateria.jpeg" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Batería Kinect</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+								<!-- Arduino -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "IoT"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/proyectos/robot.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="https://github.com/antonioalfa22/Robots"><i class="fa fa-link"></i></a>
+                  </div>
+                  <img src="assets/images/proyectos/robot.jpg" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Arduino &amp; Rapsberry Pi</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+		<!-- Hire GitHub -->
+    <section class="hire-section text-center" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+      <div class="hire-section-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Puedes ver el resto de mis proyectos en GitHub</h2>
+              <a href="https://github.com/antonioalfa22" class="btn btn-default">Ver GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contacto-->
+    <section id="contacto" class="contact-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Contáctame</h2>
+          <div class="contact-form">
+            <strong>Envíame un mensaje</strong>
+            <form name="contact-form" method="post" action="assets/php/sendemail.php">
+              <div class="form-group">
+                <label for="InputName1">Nombre</label>
+                <input type="text" name="name" class="form-control" id="InputName1" required="">
+              </div>
+              <div class="form-group">
+                <label for="InputEmail1">Email</label>
+                <input type="email" name="email" class="form-control" id="InputEmail1" required="">
+              </div>
+              <div class="form-group">
+                <label for="InputSubject">Asunto</label>
+                <input type="text" name="subject" class="form-control" id="InputSubject">
+              </div>
+              <div class="form-group">
+                <label for="InputTextarea">Mensaje</label>
+                <textarea name="message" class="form-control" id="InputTextarea" rows="5" required=""></textarea>
+              </div>
+
+              <button type="submit" name="submit" class="btn btn-primary">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+	<!-- Footer -->
+    <footer class="footer-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright text-center">
+              <p>&copy; Antonio Payá González 2018. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+	<!-- Scroll-up -->
+	<div class="scroll-up">
+		<a href="#inicio"><i class="fa fa-angle-up"></i></a>
+	</div>
+
+	<!-- JS -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.stellar.min.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+  <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/jquery.countTo.js"></script>
+  <script src="assets/js/jquery.inview.min.js"></script>
+  <script src="assets/js/jquery.easypiechart.js"></script>
+  <script src="assets/js/jquery.shuffle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script src="assets/js/jquery.fitvids.js"></script>
+  <script src="assets/js/scripts.js"></script>
 </body>
-
 </html>
