@@ -19,34 +19,38 @@
 =====================================
 */
 
-
-body{
+body {
     font-family: 'Roboto', sans-serif;
     line-height: 28px;
     font-weight: 300;
     font-size: 14px;
-    color:#282828;
+    color: #282828;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-overflow-scrolling: touch;
     -webkit-font-smoothing: antialiased !important;
 }
 
-body, html{
-    overflow-x:hidden;
+body,
+html {
+    overflow-x: hidden;
 }
+
 
 /* Link style
 ---------------------------------------------------------*/
+
 a {
     color: #68c3a3;
 }
+
 a,
-a > * {
+a>* {
     outline: none;
     cursor: pointer;
     text-decoration: none;
 }
+
 a:focus,
 a:hover {
     outline: none;
@@ -57,23 +61,25 @@ a:hover {
 
 /* Transition elsements
 -------------------------------------------------------- */
+
 .navbar a,
 .form-control {
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	   -moz-transition: all 0.4s ease-in-out 0s;
-		-ms-transition: all 0.4s ease-in-out 0s;
-		 -o-transition: all 0.4s ease-in-out 0s;
-			transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
 }
 
 a,
 .btn {
-	-webkit-transition: all 0.125s ease-in-out 0s;
-	   -moz-transition: all 0.125s ease-in-out 0s;
-		-ms-transition: all 0.125s ease-in-out 0s;
-		 -o-transition: all 0.125s ease-in-out 0s;
-			transition: all 0.125s ease-in-out 0s;
+    -webkit-transition: all 0.125s ease-in-out 0s;
+    -moz-transition: all 0.125s ease-in-out 0s;
+    -ms-transition: all 0.125s ease-in-out 0s;
+    -o-transition: all 0.125s ease-in-out 0s;
+    transition: all 0.125s ease-in-out 0s;
 }
+
 
 /* Reset box-shadow
 /* ------------------------------------------------------ */
@@ -83,18 +89,21 @@ a,
 .form-control:hover,
 .form-control:focus,
 .navbar-custom .dropdown-menu {
-	-webkit-box-shadow: none;
-			box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
-
-
 
 
 /* === Typography === */
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
-    margin:0;
+    margin: 0;
     text-transform: uppercase;
 }
 
@@ -122,12 +131,12 @@ h5 {
 }
 
 h6 {
-    font-size     : 12px;
+    font-size: 12px;
 }
 
 
-
 /* === FORM STYLE === */
+
 .form-control {
     height: 45px;
     background-color: #f7f7f7;
@@ -141,10 +150,14 @@ h6 {
     box-shadow: none;
 }
 
+
 /* BUTTON STYLE
 -----------------------------------------------------*/
+
+
 /*common-btn*/
-.btn{
+
+.btn {
     border: 0;
     border-bottom: 3px solid;
     font-weight: 700;
@@ -153,7 +166,9 @@ h6 {
     padding: 9px 22px;
 }
 
+
 /*large-btn*/
+
 .btn-lg,
 .btn-group-lg>.btn {
     padding: 14px 20px;
@@ -161,9 +176,11 @@ h6 {
     border-radius: 4px;
 }
 
+
 /*btn-primary*/
-.btn-primary{
-    background-color:#68c3a3;
+
+.btn-primary {
+    background-color: #68c3a3;
     border-color: rgba(51, 51, 51, 0.15);
 }
 
@@ -178,9 +195,11 @@ h6 {
     border-color: #4eb28f;
 }
 
+
 /*btn-info*/
-.btn-info{
-    background-color:#52b3d9;
+
+.btn-info {
+    background-color: #52b3d9;
     border-color: rgba(51, 51, 51, 0.15);
 }
 
@@ -195,22 +214,24 @@ h6 {
     border-color: #4aa0c2;
 }
 
+
 /*btn-default*/
+
 .btn-default {
     background: transparent;
     border: 1px solid #fff;
     color: #fff;
 }
+
 .btn-default:hover,
 .btn-default:focus,
 .btn-default.focus,
 .btn-default:active,
-.btn-default.active{
+.btn-default.active {
     color: #68c3a3;
     background-color: #fff;
     border-color: #fff;
 }
-
 
 button:focus {
     outline: none;
@@ -218,6 +239,7 @@ button:focus {
 
 
 /*IMAGES*/
+
 img {
     width: 100%;
 }
@@ -231,24 +253,25 @@ hr {
     padding: 0;
 }
 
+
 /* LIST STYLE
 -------------------------------------------------- */
-ul, ol {
-    margin     : 0;
-    padding    : 0;
-    list-style : none
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none
 }
 
+ul.list-check {}
 
-ul.list-check {
-
-}
-
-ul.list-check li{
+ul.list-check li {
     position: relative;
     font-size: 18px;
     line-height: 32px;
 }
+
 ul.list-check li::before {
     content: "\f00c";
     font-family: fontawesome;
@@ -258,13 +281,15 @@ ul.list-check li::before {
 
 
 /* === MAIN === */
+
 .section-padding {
-	padding: 120px 0 100px;
+    padding: 120px 0 100px;
 }
 
 
 /* SECTION TITLE
 ----------------------------------------------------- */
+
 .section-title {
     margin-bottom: 80px;
     text-align: center;
@@ -287,79 +312,84 @@ ul.list-check li::before {
 }
 
 
-
 /* === HOME === */
-@media (max-width : 640px) {
-    .tt-fullHeight{
+
+@media (max-width: 640px) {
+    .tt-fullHeight {
         height: 560px !important;
     }
 }
 
-
 #inicio {
-	background: url(../images/home2.jpg) no-repeat center center;
-	-webkit-background-attachment: fixed;
+    background: url(../images/home2.jpg) no-repeat center center;
+    -webkit-background-attachment: fixed;
     background-attachment: fixed;
-	background-color: #222;
-	background-size: cover;
-	padding: 0;
-	position: relative;
+    background-color: #222;
+    background-size: cover;
+    padding: 0;
+    position: relative;
 }
+
 #inicio:before {
-	content: "";
-	background-color: rgba(26, 30, 35, 0.85);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    content: "";
+    background-color: rgba(26, 30, 35, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .intro {
-	position: absolute;
-	width: 100%;
-	top: 50%;
-	left: 0;
-	text-align: center;
-	-webkit-transform: translate(0%, -50%);
-	   -moz-transform: translate(0%, -50%);
-		-ms-transform: translate(0%, -50%);
-		 -o-transform: translate(0%, -50%);
-			transform: translate(0%, -50%);
-	padding: 0 15px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    padding: 0 15px;
 }
 
-.intro h1{
-	font-size: 60px;
-	line-height: 80px;
-	margin-bottom: 16px;
-	color: #52b3d9;
+.intro h1 {
+    font-size: 60px;
+    line-height: 80px;
+    margin-bottom: 16px;
+    color: #52b3d9;
 }
-.intro h1 span{
-	color: #68c3a3;
+
+.intro h1 span {
+    color: #68c3a3;
 }
-.intro p{
-	color: #f7f7f7;
-	margin-bottom: 40px;
+
+.intro p {
+    color: #f7f7f7;
+    margin-bottom: 40px;
 }
 
 .intro-sub {
-	color: #fff;
-	font-size: 24px;
-	line-height: 32px;
-	font-weight: 700;
-	text-transform: uppercase;
-	display: block;
-	margin-bottom: 20px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;
 }
+
 
 /*
 SOCIAL ICON
 -------------------------------------------*/
+
 .social-icons {
     margin-top: 20px;
 }
-.social-icons a i{
+
+.social-icons a i {
     position: relative;
     color: #fff;
     font-size: 18px;
@@ -385,17 +415,17 @@ SOCIAL ICON
     border: 1px solid #fff;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
     -webkit-transition: all 300ms;
-       -moz-transition: all 300ms;
-         -o-transition: all 300ms;
-            transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
 }
 
-.social-icons a i:hover::after{
+.social-icons a i:hover::after {
     background: #68c3a3;
     border: 1px solid transparent;
     z-index: 0;
@@ -403,6 +433,7 @@ SOCIAL ICON
 
 
 /* === NAVIGATION === */
+
 .header {
     border-bottom: 1px solid #eee;
     position: relative;
@@ -413,7 +444,7 @@ SOCIAL ICON
 }
 
 .header::after {
-    border-bottom:1px solid #eee;
+    border-bottom: 1px solid #eee;
     width: 100%;
     position: absolute;
     content: "";
@@ -430,45 +461,45 @@ SOCIAL ICON
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-
 .navbar-custom,
 .navbar-custom .dropdown-menu {
     background: #fff;
     padding: 0;
 }
 
-.navbar-custom ul li a span{
-    margin-left:5px;
+.navbar-custom ul li a span {
+    margin-left: 5px;
 }
 
 .navbar-custom .dropdown-menu {
-    margin-top:10px;
+    margin-top: 10px;
     display: block;
     visibility: hidden;
-    opacity:0;
+    opacity: 0;
     border: 1px solid #ddd;
     border-top: 2px solid #68c3a3;
     border-radius: 0;
     border-bottom: 3px double #ddd;
     background-color: #FFFFFF;
-    -webkit-transition:all 400ms;
-    -moz-transition:all 400ms;
-    -o-transition:all 400ms;
-    transition:all 400ms;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
 }
 
 .navbar-right .dropdown-menu {
-  right: auto;
-  left: 0;
-}
-.navbar-custom .navbar-nav > li:hover .dropdown-menu{
-    display: block;
-    opacity:1;
-    visibility: visible;
-    margin-top:-2px;
+    right: auto;
+    left: 0;
 }
 
-.navbar-custom .navbar-nav > li > a{
+.navbar-custom .navbar-nav>li:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    margin-top: -2px;
+}
+
+.navbar-custom .navbar-nav>li>a {
     color: #282828;
     font-size: 14px;
     font-weight: 700;
@@ -477,20 +508,20 @@ SOCIAL ICON
     text-transform: uppercase;
 }
 
-.navbar-custom .navbar-nav > li > a > img{
+.navbar-custom .navbar-nav>li>a>img {
     width: 25px;
     height: 25px;
 }
 
-.navbar-custom .dropdown-menu > li{
+.navbar-custom .dropdown-menu>li {
     border-bottom: 1px solid #F0F0F0;
 }
 
-.navbar-custom .dropdown-menu > li:last-child{
+.navbar-custom .dropdown-menu>li:last-child {
     border-bottom: 0;
 }
 
-.navbar-custom .dropdown-menu > li > a {
+.navbar-custom .dropdown-menu>li>a {
     padding: 10px 20px;
     color: #282828;
     font-size: 14px;
@@ -500,7 +531,7 @@ SOCIAL ICON
 .navbar-custom .nav li.active,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
-.navbar-custom .navbar-nav > li.active > a {
+.navbar-custom .navbar-nav>li.active>a {
     background: none;
     outline: 0;
     color: #68c3a3;
@@ -511,9 +542,9 @@ SOCIAL ICON
     font-size: 18px;
 }
 
-.navbar-custom .nav .open > a,
-.navbar-custom .dropdown-menu > li > a:hover,
-.navbar-custom .dropdown-menu > li > a:focus {
+.navbar-custom .nav .open>a,
+.navbar-custom .dropdown-menu>li>a:hover,
+.navbar-custom .dropdown-menu>li>a:focus {
     background: #f5f5f5;
 }
 
@@ -522,8 +553,8 @@ SOCIAL ICON
 }
 
 
-
 /* === About Section === */
+
 .short-info {
     margin-bottom: 40px;
 }
@@ -534,39 +565,42 @@ SOCIAL ICON
 
 .short-info ul {
     margin-top: 10px;
-    display:inline-block;
+    display: inline-block;
 }
+
 .short-info ul li {
     width: 50%;
     float: left;
 }
 
-.my-signature{
+.my-signature {
     margin-bottom: 45px;
 }
-.my-signature img{
+
+.my-signature img {
     width: inherit;
 }
 
 
 /*download-button*/
+
 .download-button a {
     margin-right: 20px;
     color: #fff;
 }
+
 .download-button a i {
     margin-right: 10px;
 }
 
-
-.biography{
+.biography {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border:1px solid #EEEEEE;
+    border: 1px solid #EEEEEE;
     position: relative;
 }
 
-.biography::after{
+.biography::after {
     content: "";
     border-bottom: 1px solid #EEEEEE;
     position: absolute;
@@ -576,31 +610,30 @@ SOCIAL ICON
     height: 20px;
 }
 
-.myphoto{
+.myphoto {
     position: relative;
     background: url(../../assets/images/photo-frame.png) bottom center no-repeat;
     background-size: contain;
 }
 
-.myphoto img{
+.myphoto img {
     position: relative;
     z-index: -1;
 }
 
-.biography ul{
-    padding:25px 20px 30px;
+.biography ul {
+    padding: 25px 20px 30px;
 }
 
-.biography ul li{
-    padding:5px 0;
+.biography ul li {
+    padding: 5px 0;
     font-size: 16px;
-    border-bottom:1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
-.biography ul li:last-child{
-    border-bottom:0;
+.biography ul li:last-child {
+    border-bottom: 0;
 }
-
 
 
 /* === Video Section === */
@@ -611,20 +644,22 @@ SOCIAL ICON
     background-size: cover;
     position: relative;
 }
+
 .video-section .tf-bg-overlay {
     min-height: 500px;
 }
+
 .video-intro {
     position: absolute;
     top: 50%;
     margin-top: -50px;
     left: 0;
-    right:0;
+    right: 0;
     color: #fff;
     background: none;
 }
 
-.video-intro i{
+.video-intro i {
     border: 1px solid #fff;
     width: 80px;
     height: 60px;
@@ -643,34 +678,41 @@ SOCIAL ICON
     background: transparent;
 }
 
+
 /* === Resume Section === */
+
 
 /*---------------------------------------------------------
 Resume Timeline
 -----------------------------------------------------------*/
-.resume-title h3{
+
+.resume-title h3 {
     text-align: center;
 }
-.resume-section > div > div{
+
+.resume-section>div>div {
     margin-bottom: 60px;
 }
-.resume-section > div > div:nth-of-type(2){
+
+.resume-section>div>div:nth-of-type(2) {
     margin-bottom: 0;
 }
-.resume-title{
+
+.resume-title {
     margin-bottom: 30px;
 }
+
 .timeline {
     position: relative;
     padding: 0;
     list-style: none;
 }
 
-.resume{
+.resume {
     position: relative;
 }
 
-.resume:before{
+.resume:before {
     content: "";
     position: absolute;
     top: -8px;
@@ -680,13 +722,13 @@ Resume Timeline
     left: 50%;
     margin-left: -6px;
     -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
-.resume:after{
+.resume:after {
     content: "";
     position: absolute;
     bottom: -8px;
@@ -696,10 +738,10 @@ Resume Timeline
     left: 50%;
     margin-left: -6px;
     -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .timeline:before {
@@ -734,8 +776,8 @@ Resume Timeline
     width: 100%;
 }
 
-.timeline-content{
-    padding:5px 20px 0 20px;
+.timeline-content {
+    padding: 5px 20px 0 20px;
 }
 
 .timeline>li .timeline-panel:before {
@@ -758,7 +800,6 @@ Resume Timeline
     background-color: #fff;
     left: 20px;
 }
-
 
 .timeline>li .posted-date .month {
     font-size: 18px;
@@ -797,166 +838,154 @@ Resume Timeline
     font-size: 20px;
     line-height: 28px;
 }
-.timeline-heading span{
+
+.timeline-heading span {
     display: block;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-
-
-
-
 @media(min-width:992px) {
-.timeline:before {
-    left: 50%;
+    .timeline:before {
+        left: 50%;
+    }
+    .timeline>li {
+        margin-bottom: 15px;
+        min-height: 100px;
+    }
+    .timeline>li .posted-date {
+        position: absolute;
+        text-align: center;
+        background-color: #fff;
+    }
+    .timeline>li .timeline-panel {
+        float: left;
+        width: 43%;
+        text-align: right;
+        border: 1px solid #eee;
+        position: relative;
+    }
+    .timeline-content {
+        position: relative;
+        padding: 24px;
+        background-color: #fff;
+        -webkit-transition: all 400ms;
+        -moz-transition: all 400ms;
+        -o-transition: all 400ms;
+        transition: all 400ms;
+    }
+    .timeline-content::after {
+        border: 1px solid #eee;
+        width: 100%;
+        position: absolute;
+        content: "";
+        bottom: -3px;
+        height: 10px;
+        left: 0;
+        z-index: -1;
+    }
+    .timeline>li .timeline-content:hover {
+        background: #68c3a3;
+        color: #fff;
+    }
+    .timeline>li .timeline-panel::before,
+    .timeline>li.timeline-inverted .timeline-panel::before {
+        content: "";
+        top: 25px;
+        position: absolute;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+    .timeline>li .timeline-panel::before {
+        left: 100%;
+        border-left: 12px solid #ECECEC;
+        -webkit-transition: all 400ms;
+        -moz-transition: all 400ms;
+        -o-transition: all 400ms;
+        transition: all 400ms;
+    }
+    .timeline>li .timeline-panel:hover::before {
+        border-left: 12px solid #68c3a3;
+    }
+    .timeline>li.timeline-inverted .timeline-panel::before {
+        right: 100%;
+        border-right: 12px solid #ECECEC;
+        -webkit-transition: all 400ms;
+        -moz-transition: all 400ms;
+        -o-transition: all 400ms;
+        transition: all 400ms;
+    }
+    .timeline>li.timeline-inverted .timeline-panel:hover::before {
+        border-right: 12px solid #68c3a3;
+        border-left: 0;
+    }
+    .timeline>li .timeline-panel::after,
+    .timeline>li.timeline-inverted .timeline-panel::after {
+        content: "";
+        top: 25px;
+        position: absolute;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+    .timeline>li .timeline-panel::after {
+        left: 100%;
+        margin-left: -2px;
+        border-left: 12px solid #FFFFFF;
+        -webkit-transition: all 400ms;
+        -moz-transition: all 400ms;
+        -o-transition: all 400ms;
+        transition: all 400ms;
+    }
+    .timeline>li .timeline-panel:hover::after {
+        border-left: 12px solid #68c3a3;
+    }
+    .timeline>li.timeline-inverted .timeline-panel::after {
+        right: 100%;
+        margin-right: -2px;
+        border-right: 12px solid #FFFFFF;
+        -webkit-transition: all 400ms;
+        -moz-transition: all 400ms;
+        -o-transition: all 400ms;
+        transition: all 400ms;
+    }
+    .timeline>li.timeline-inverted .timeline-panel:hover::after {
+        border-right: 12px solid #68c3a3;
+        border-left: 0;
+    }
+    .timeline>li .posted-date {
+        left: 50%;
+        width: 120px;
+        margin-left: -60px;
+        margin-top: 28px;
+    }
+    .timeline>li .posted-date .month {
+        float: none;
+    }
 }
-
-.timeline>li {
-    margin-bottom: 15px;
-    min-height: 100px;
-}
-
-.timeline>li .posted-date {
-    position: absolute;
-    text-align: center;
-    background-color: #fff;
-}
-
-.timeline>li .timeline-panel {
-    float: left;
-    width: 43%;
-    text-align: right;
-    border: 1px solid #eee;
-    position: relative;
-}
-
-.timeline-content{
-    position: relative;
-    padding: 24px;
-    background-color: #fff;
-    -webkit-transition:all 400ms;
-    -moz-transition:all 400ms;
-    -o-transition:all 400ms;
-    transition: all 400ms;
-}
-
-.timeline-content::after{
-    border: 1px solid #eee;
-    width: 100%;
-    position: absolute;
-    content: "";
-    bottom: -3px;
-    height:10px;
-    left: 0;
-    z-index: -1;
-}
-
-.timeline>li .timeline-content:hover {
-    background: #68c3a3;
-    color: #fff;
-}
-
-.timeline>li .timeline-panel::before,
-.timeline>li.timeline-inverted .timeline-panel::before {
-    content: "";
-    top: 25px;
-    position: absolute;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-}
-.timeline>li .timeline-panel::before {
-    left: 100%;
-    border-left: 12px solid #ECECEC;
-    -webkit-transition:all 400ms;
-    -moz-transition:all 400ms;
-    -o-transition:all 400ms;
-    transition: all 400ms;
-}
-.timeline>li .timeline-panel:hover::before {
-    border-left: 12px solid #68c3a3;
-}
-
-.timeline>li.timeline-inverted .timeline-panel::before {
-    right: 100%;
-    border-right: 12px solid #ECECEC;
-    -webkit-transition:all 400ms;
-    -moz-transition:all 400ms;
-    -o-transition:all 400ms;
-    transition: all 400ms;
-}
-.timeline>li.timeline-inverted .timeline-panel:hover::before {
-    border-right: 12px solid #68c3a3;
-    border-left: 0;
-}
-
-.timeline>li .timeline-panel::after,
-.timeline>li.timeline-inverted .timeline-panel::after {
-    content: "";
-    top: 25px;
-    position: absolute;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-}
-.timeline>li .timeline-panel::after {
-    left: 100%;
-    margin-left: -2px;
-    border-left: 12px solid #FFFFFF;
-    -webkit-transition:all 400ms;
-    -moz-transition:all 400ms;
-    -o-transition:all 400ms;
-    transition: all 400ms;
-}
-.timeline>li .timeline-panel:hover::after {
-    border-left: 12px solid #68c3a3;
-}
-
-.timeline>li.timeline-inverted .timeline-panel::after {
-    right: 100%;
-    margin-right:-2px;
-    border-right: 12px solid #FFFFFF;
-    -webkit-transition:all 400ms;
-    -moz-transition:all 400ms;
-    -o-transition:all 400ms;
-    transition: all 400ms;
-}
-.timeline>li.timeline-inverted .timeline-panel:hover::after {
-    border-right: 12px solid #68c3a3;
-    border-left: 0;
-}
-
-.timeline>li .posted-date {
-    left: 50%;
-    width: 120px;
-    margin-left: -60px;
-    margin-top: 28px;
-}
-.timeline>li .posted-date .month {
-    float: none;
-}
-
-
-}
-
 
 
 /* === Skill Section === */
+
 .skills-section {
     background-color: #1a1e23;
     color: #fff;
 }
-.skills-section .section-title{
+
+.skills-section .section-title {
     color: #fff;
     margin-bottom: 110px;
 }
-.skills-section .section-title h2{
+
+.skills-section .section-title h2 {
     color: #fff;
 }
+
 .skill-title {
     width: 25%;
     float: left;
 }
-.skill-title h3{
+
+.skill-title h3 {
     font-size: 18px;
     font-weight: 400;
     margin-top: -6px;
@@ -969,6 +998,7 @@ Resume Timeline
 .skill-progress {
     position: relative;
 }
+
 .progress {
     height: 10px;
     margin-bottom: 40px;
@@ -981,41 +1011,41 @@ Resume Timeline
 .progress-bar {
     background-color: #68c3a3;
 }
-.progress-bar span{
+
+.progress-bar span {
     position: absolute;
     top: -20px;
     right: 15px;
 }
 
 .progress .progress-bar.six-sec-ease-in-out {
-  -webkit-transition: width 2s ease-in-out;
-  -moz-transition: width 2s ease-in-out;
-  -o-transition: width 2s ease-in-out;
-  transition:  width 2s ease-in-out;
+    -webkit-transition: width 2s ease-in-out;
+    -moz-transition: width 2s ease-in-out;
+    -o-transition: width 2s ease-in-out;
+    transition: width 2s ease-in-out;
 }
-
 
 .skill-chart h3 {
     margin-top: 20px;
 }
 
-.our-progress{
-    margin:10px 0 30px;
+.our-progress {
+    margin: 10px 0 30px;
 }
 
-.progress-percent{
+.progress-percent {
     margin-left: auto;
     margin-right: auto;
 }
 
-.our-progress h3{
+.our-progress h3 {
     font-weight: 400;
     margin-bottom: 5px;
 }
 
 
-
 /* === Chart CSS  === */
+
 .chart {
     position: relative;
     display: inline-block;
@@ -1024,11 +1054,13 @@ Resume Timeline
     margin: 40px auto;
     text-align: center;
 }
+
 .chart canvas {
-    position:absolute;
-    top:0;
-    left:0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
 .percent {
     display: inline-block;
     margin: auto;
@@ -1051,30 +1083,41 @@ Resume Timeline
     margin-top: 20px;
 }
 
-/*.percent:after {content: '%';margin-left: 0.1em;font-size: .8em;}*/
-.angular{margin-top:100px;}
-.angular .chart {margin-top:0;}
-.chart .chart-text h3{font-size:22px;}
 
+/*.percent:after {content: '%';margin-left: 0.1em;font-size: .8em;}*/
+
+.angular {
+    margin-top: 100px;
+}
+
+.angular .chart {
+    margin-top: 0;
+}
+
+.chart .chart-text h3 {
+    font-size: 22px;
+}
 
 
 /* === Work Section === */
+
 .works-section {
     background-color: #f7f7f7;
 }
+
 .portfolio-item {
     padding-right: 5px;
     padding-left: 5px;
     min-height: 235px;
 }
-.portfolio-bg{
-   background: #fff;
-   padding: 5px;
-   margin-bottom: 20px;
-   border: 1px solid #eee;
-   border-bottom: 3px double #eee;
-}
 
+.portfolio-bg {
+    background: #fff;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    border-bottom: 3px double #eee;
+}
 
 .portfolio {
     position: relative;
@@ -1083,11 +1126,11 @@ Resume Timeline
 
 
 /* Shuffle Filter*/
+
 #filter {
     margin: 0 0 35px;
     text-align: center;
 }
-
 
 #filter li a {
     color: #68c3a3;
@@ -1097,6 +1140,7 @@ Resume Timeline
     border-radius: 4px;
     transition: inherit;
 }
+
 #filter li a.active,
 #filter li a:hover {
     position: relative;
@@ -1106,7 +1150,7 @@ Resume Timeline
 }
 
 #filter li a.active::after,
-#filter li a:hover::after{
+#filter li a:hover::after {
     position: absolute;
     content: "";
     width: 0;
@@ -1138,7 +1182,6 @@ Resume Timeline
     transition: all 400ms;
 }
 
-
 .links {
     width: 90px;
     height: 40px;
@@ -1148,24 +1191,26 @@ Resume Timeline
     margin-top: -20px;
     margin-left: -45px;
     opacity: 0;
-    -webkit-transform: translate(0,-50px);
-    -moz-transform: translate(0,-50px);
-    -ms-transform: translate(0,-50px);
-    -o-transform: translate(0,-50px);
-    transform: translate(0,-50px);
+    -webkit-transform: translate(0, -50px);
+    -moz-transform: translate(0, -50px);
+    -ms-transform: translate(0, -50px);
+    -o-transform: translate(0, -50px);
+    transform: translate(0, -50px);
 }
 
-.links a i{
+.links a i {
     position: relative;
     color: #68c3a3;
     font-size: 16px;
     margin: 0 13px;
     z-index: 100;
 }
+
 .links a:hover i {
-   color:  #fff;
+    color: #fff;
 }
-.links a i::after{
+
+.links a i::after {
     position: absolute;
     content: "";
     left: -7px;
@@ -1176,11 +1221,12 @@ Resume Timeline
     z-index: -1;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
+
 .links a:hover i::after {
     background-color: #68c3a3;
 }
@@ -1199,15 +1245,17 @@ Resume Timeline
 .portfolio:hover .tt-overlay,
 .portfolio:hover .links {
     opacity: 1;
-    -webkit-transform: translate(0,0);
-    -moz-transform: translate(0,0);
-    -ms-transform: translate(0,0);
-    -o-transform: translate(0,0);
-    transform: translate(0,0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
 }
-.portfolio:hover .portfolio-info{
+
+.portfolio:hover .portfolio-info {
     bottom: 0;
 }
+
 .portfolio-info h3 {
     font-size: 14px;
     line-height: 45px;
@@ -1217,33 +1265,34 @@ Resume Timeline
 
 
 /*PopUp fade effect*/
+
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
-  opacity: 0;
-  -webkit-backface-visibility: hidden;
-  /* ideally, transition speed should match zoom duration */
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    /* ideally, transition speed should match zoom duration */
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .mfp-with-zoom.mfp-ready .mfp-container {
     opacity: 1;
 }
+
 .mfp-with-zoom.mfp-ready.mfp-bg {
     opacity: 0.8;
 }
 
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
-  opacity: 0;
+    opacity: 0;
 }
 
 
-
-
 /* === Facts Section === */
+
 .facts-section {
     background: url(../../assets/images/counter-bg.jpg) no-repeat center center;
     background-attachment: fixed;
@@ -1260,11 +1309,13 @@ Resume Timeline
     font-size: 64px;
     margin-bottom: 25px;
 }
+
 .count-wrap h3 {
     font-size: 50px;
     line-height: 28px;
     margin-bottom: 20px;
 }
+
 .count-wrap p {
     font-size: 18px;
     font-weight: 700;
@@ -1273,18 +1324,24 @@ Resume Timeline
 
 
 /* === Hire Section === */
+
 .hire-section {
     background: url(../../assets/images/hire-bg.jpg) no-repeat top center #68C3A3;
     background-attachment: fixed;
     background-size: cover;
     color: #fff;
 }
+
 .hire-section-bg {
     padding: 110px 0;
-    background: -webkit-linear-gradient(bottom, #68C3A3, rgba(104, 195, 163, 0.7)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Fx 3.6-15*/
-    background: linear-gradient(to top, #68C3A3, rgba(104, 195, 163, 0.7)); /*Standard*/
+    background: -webkit-linear-gradient(bottom, #68C3A3, rgba(104, 195, 163, 0.7));
+    /*Safari 5.1-6*/
+    background: -o-linear-gradient(top, #68C3A3, rgba(104, 195, 163, 0.7));
+    /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top, #68C3A3, rgba(104, 195, 163, 0.7));
+    /*Fx 3.6-15*/
+    background: linear-gradient(to top, #68C3A3, rgba(104, 195, 163, 0.7));
+    /*Standard*/
 }
 
 .hire-section h2 {
@@ -1298,14 +1355,14 @@ Resume Timeline
 
 
 /* === Contact Section === */
-.contact-section  {
 
-}
+.contact-section {}
 
 .contact-section strong {
     display: block;
     text-transform: uppercase;
 }
+
 .contact-form strong {
     margin-bottom: 40px;
 }
@@ -1318,11 +1375,12 @@ Resume Timeline
     margin-top: 15px;
 }
 
-.contact-section div > i{
+.contact-section div>i {
     float: left;
     font-size: 45px;
     margin-right: 20px;
 }
+
 .contact-section address,
 .contact-section .contact-number {
     overflow: hidden;
@@ -1333,32 +1391,29 @@ Resume Timeline
 
 
 /*MAP*/
+
 .location-map {
     padding: 4px;
     border: 1px solid #eee;
     border-bottom: 3px double #eee;
 }
+
 .map-canvas {
     height: 350px;
 }
 
 
-
-
 /* === Footer Wrapper === */
+
 .footer-wrapper {
     background: #1a1e23;
     padding: 36px 0;
     color: #fff;
-
 }
+
 .copyright p {
     margin: 0;
 }
-
-
-
-
 
 
 /* ---------------------------------------------- /*
@@ -1366,45 +1421,46 @@ Resume Timeline
 /* ---------------------------------------------- */
 
 .scroll-up {
-	position: fixed;
-	display: none;
-	z-index: 999;
-	bottom: 1.8em;
-	right: 1.8em;
+    position: fixed;
+    display: none;
+    z-index: 999;
+    bottom: 1.8em;
+    right: 1.8em;
 }
 
 .scroll-up a {
-	background-color: #68c3a3;
-	display: block;
-	width: 28px;
-	height: 28px;
-	text-align: center;
-	color: #fff;
-	font-size: 14px;
-	line-height: 28px;
+    background-color: #68c3a3;
+    display: block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
 }
 
 .scroll-up a:hover,
 .scroll-up a:active {
-	background-color: rgba(235, 235, 235, .8);
-	color: #222;
+    background-color: rgba(235, 235, 235, .8);
+    color: #222;
 }
+
 
 /* ---------------------------------------------- /*
  * Mouse animate icon
 /* ---------------------------------------------- */
 
 .mouse-icon {
-	position: absolute;
-	left: 50%;
-	bottom: 40px;
-	border: 2px solid #fff;
-	border-radius: 16px;
-	height: 50px;
-	width: 30px;
-	margin-left: -17px;
-	display: block;
-	z-index: 10;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    height: 50px;
+    width: 30px;
+    margin-left: -17px;
+    display: block;
+    z-index: 10;
 }
 
 .mouse-icon .wheel {
@@ -1423,66 +1479,81 @@ Resume Timeline
 }
 
 .mouse-icon .wheel {
-	position: relative;
-	border-radius: 10px;
-	background: #fff;
-	width: 4px;
-	height: 10px;
-	top: 4px;
-	margin-left: auto;
-	margin-right: auto;
+    position: relative;
+    border-radius: 10px;
+    background: #fff;
+    width: 4px;
+    height: 10px;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @-webkit-keyframes drop {
-    0%   { top:5px;  opacity: 0;}
-    30%  { top:10px; opacity: 1;}
-    100% { top:25px; opacity: 0;}
+    0% {
+        top: 5px;
+        opacity: 0;
+    }
+    30% {
+        top: 10px;
+        opacity: 1;
+    }
+    100% {
+        top: 25px;
+        opacity: 0;
+    }
 }
 
-
-@keyframes drop	{
-	0%   { top:5px;  opacity: 0;}
-	30%  { top:10px; opacity: 1;}
-	100% { top:25px; opacity: 0;}
+@keyframes drop {
+    0% {
+        top: 5px;
+        opacity: 0;
+    }
+    30% {
+        top: 10px;
+        opacity: 1;
+    }
+    100% {
+        top: 25px;
+        opacity: 0;
+    }
 }
+
 
 /* ---------------------------------------------- /*
  * Preloader
 /* ---------------------------------------------- */
 
 #tt-preloader {
-	background: #FFF;
-	bottom: 0;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 9999;
+    background: #FFF;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
 }
 
 #pre-status,
 .preload-placeholder {
-	background-image: url(../images/preloader.gif);
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 200px;
-	left: 50%;
-	margin: -100px 0 0 -100px;
-	position: absolute;
-	top: 50%;
-	width: 200px;
+    background-image: url(../images/preloader.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    position: absolute;
+    top: 50%;
+    width: 200px;
 }
 
 .preload-placeholder {
-	background: none;
-	left: 0;
-	margin: 0;
-	text-align: center;
-	top: 65%;
+    background: none;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    top: 65%;
 }
-
-
-
 
 
 /* === Home Page Two === */
@@ -1495,7 +1566,9 @@ Resume Timeline
     position: relative;
 }
 
+
 /* === About Section === */
+
 .short-info {
     margin-bottom: 40px;
 }
@@ -1504,9 +1577,10 @@ Resume Timeline
     margin-bottom: 30px;
 }
 
-.hobby-list-wrap h3{
+.hobby-list-wrap h3 {
     margin-bottom: 45px;
 }
+
 .hobby-list span {
     border: 1px solid #eee;
     font-weight: 700;
@@ -1525,19 +1599,22 @@ Resume Timeline
 }
 
 
-
 /*SERVICE SECTION*/
+
 .service-section {
     background: url(../../assets/images/service-bg.jpg) no-repeat center center;
     background-size: cover;
-    padding:120px 0;
+    padding: 120px 0;
 }
+
 .service-section h2 {
     color: #fff;
 }
-.service-wrap{
+
+.service-wrap {
     padding: 40px 0
 }
+
 .service-box {
     text-align: center;
     position: relative;
@@ -1545,6 +1622,7 @@ Resume Timeline
     height: 180px;
     margin: 0 auto;
 }
+
 .service-box::after {
     content: "";
     position: absolute;
@@ -1561,6 +1639,7 @@ Resume Timeline
     transform: rotate(45deg);
     border-radius: 15px;
 }
+
 .service-box i {
     font-size: 40px;
     color: #fff;
@@ -1568,6 +1647,7 @@ Resume Timeline
     z-index: 100;
     position: relative;
 }
+
 .service-box h3 {
     font-size: 18px;
     line-height: 18px;
@@ -1575,14 +1655,17 @@ Resume Timeline
     z-index: 100;
     position: relative;
 }
-.service-box:hover.service-box::after{
+
+.service-box:hover.service-box::after {
     background: #fff;
     border: 1px solid transparent;
 }
+
 .service-box:hover i,
-.service-box:hover h3{
+.service-box:hover h3 {
     color: #2c3e50;
 }
+
 .service-box i,
 .service-box h3,
 .service-box::after {
@@ -1592,8 +1675,10 @@ Resume Timeline
     transition: all 300ms;
 }
 
+
 /*HOMEPAGE TWO*/
-#inicioTwo{
+
+#inicioTwo {
     position: relative;
 }
 
@@ -1611,20 +1696,21 @@ Resume Timeline
     z-index: 0;
     overflow: hidden;
 }
-.home-version-two::before{
+
+.home-version-two::before {
     z-index: -100;
 }
 
 .personal-info {
     color: #fff;
-    padding:0 0 0 15px;
+    padding: 0 0 0 15px;
     position: absolute;
     top: 50%;
     -webkit-transform: translate(0%, -50%);
-       -moz-transform: translate(0%, -50%);
-        -ms-transform: translate(0%, -50%);
-         -o-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
 }
 
 .personal-info h1 {
@@ -1633,14 +1719,15 @@ Resume Timeline
     margin-bottom: 16px;
 }
 
-.personal-info h1 span{
-    color:#68c3a3;
+.personal-info h1 span {
+    color: #68c3a3;
 }
+
 .personal-info p {
     margin-bottom: 40px;
 }
 
-.video-introducing{
+.video-introducing {
     background: url(../images/video-bg.jpg) no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
