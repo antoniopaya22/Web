@@ -1,4 +1,3 @@
-
 /*
     = Preloader
     = Animated scrolling / Scroll Up
@@ -16,7 +15,7 @@
 
 */
 
-jQuery(function ($) {
+jQuery(function($) {
 
     'use strict';
 
@@ -36,8 +35,8 @@ jQuery(function ($) {
     // Animated scrolling / Scroll Up
     // -------------------------------------------------------------
 
-    (function () {
-        $('a[href*=#]').bind("click", function(e){
+    (function() {
+        $('a[href*=#]').bind("click", function(e) {
             var anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $(anchor.attr('href')).offset().top
@@ -51,10 +50,10 @@ jQuery(function ($) {
     // -------------------------------------------------------------
     // Full Screen Slider
     // -------------------------------------------------------------
-    (function () {
+    (function() {
         $(".tt-fullHeight").height($(window).height());
 
-        $(window).resize(function(){
+        $(window).resize(function() {
             $(".tt-fullHeight").height($(window).height());
         });
 
@@ -65,7 +64,7 @@ jQuery(function ($) {
     // Sticky Menu
     // -------------------------------------------------------------
 
-    (function () {
+    (function() {
         $('.header').sticky({
             topSpacing: 0
         });
@@ -83,7 +82,7 @@ jQuery(function ($) {
     // Back To Top
     // -------------------------------------------------------------
 
-    (function () {
+    (function() {
         $(window).scroll(function() {
             if ($(this).scrollTop() > 100) {
                 $('.scroll-up').fadeIn();
@@ -99,12 +98,12 @@ jQuery(function ($) {
     // -------------------------------------------------------------
     $('.count-wrap').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
         if (visible) {
-            $(this).find('.timer').each(function () {
+            $(this).find('.timer').each(function() {
                 var $this = $(this);
                 $({ Counter: 0 }).animate({ Counter: $this.text() }, {
                     duration: 2000,
                     easing: 'swing',
-                    step: function () {
+                    step: function() {
                         $this.text(Math.ceil(this.Counter));
                     }
                 });
@@ -120,8 +119,8 @@ jQuery(function ($) {
 
     $('.skill-progress').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
         if (visible) {
-            $.each($('div.progress-bar'),function(){
-                $(this).css('width', $(this).attr('aria-valuenow')+'%');
+            $.each($('div.progress-bar'), function() {
+                $(this).css('width', $(this).attr('aria-valuenow') + '%');
             });
             $(this).unbind('inview');
         }
@@ -136,8 +135,8 @@ jQuery(function ($) {
                 //your configuration goes here
                 easing: 'easeOut',
                 delay: 3000,
-                barColor:'#68c3a3',
-                trackColor:'rgba(255,255,255,0.2)',
+                barColor: '#68c3a3',
+                trackColor: 'rgba(255,255,255,0.2)',
                 scaleColor: false,
                 lineWidth: 8,
                 size: 140,
@@ -156,7 +155,7 @@ jQuery(function ($) {
     // Shuffle
     // -------------------------------------------------------------
 
-    (function () {
+    (function() {
 
         var $grid = $('#grid');
 
@@ -165,7 +164,7 @@ jQuery(function ($) {
         });
 
         /* reshuffle when user clicks a filter item */
-        $('#filter a').click(function (e) {
+        $('#filter a').click(function(e) {
             e.preventDefault();
 
             // set active class
@@ -176,7 +175,7 @@ jQuery(function ($) {
             var groupName = $(this).attr('data-group');
 
             // reshuffle grid
-            $grid.shuffle('shuffle', groupName );
+            $grid.shuffle('shuffle', groupName);
         });
 
 
@@ -187,17 +186,17 @@ jQuery(function ($) {
     // Magnific Popup
     // -------------------------------------------------------------
 
-    (function () {
-      $('.image-link').magnificPopup({
+    (function() {
+        $('.image-link').magnificPopup({
 
-        gallery: {
-          enabled: true
-        },
-        removalDelay: 300, // Delay in milliseconds before popup is removed
-        mainClass: 'mfp-with-zoom', // this class is for CSS animation below
-        type:'image'
+            gallery: {
+                enabled: true
+            },
+            removalDelay: 300, // Delay in milliseconds before popup is removed
+            mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+            type: 'image'
 
-      });
+        });
 
     }());
 
@@ -206,31 +205,11 @@ jQuery(function ($) {
     // -------------------------------------------------------------
     // Fit Vids
     // -------------------------------------------------------------
-    (function () {
+    (function() {
         $(".video-container").fitVids();
     }());
 
 
-
-    // -------------------------------------------------------------
-    // Vidio auto play
-    // -------------------------------------------------------------
-    (function () {
-
-    /* Vimeo API: http://developer.vimeo.com/player/js-api */
-
-        var iframe = document.getElementById('nofocusvideo');
-        // $f == Froogaloop
-        var player = $f(iframe);
-
-        $('.modal').on('hidden.bs.modal', function () {
-        player.api('pause');
-        })
-
-        $('.modal').on('shown.bs.modal', function () {
-        player.api('play');
-        })
-    }());
 
 
 
@@ -241,9 +220,9 @@ jQuery(function ($) {
 
     $(window).load(function() {
 
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 
-        }else {
+        } else {
             $.stellar({
                 horizontalScrolling: false,
                 responsive: true
@@ -257,11 +236,11 @@ jQuery(function ($) {
     // WOW JS
     // -------------------------------------------------------------
 
-    (function () {
+    (function() {
 
         new WOW({
 
-            mobile:  false
+            mobile: false
 
         }).init();
 
